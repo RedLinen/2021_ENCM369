@@ -1,2 +1,2 @@
+firstname,lastname,email,git_username,repository_name
 Joshua,Beauchesne,joshua.beauchesne@ucalgary.ca,RedLinen,2021_ENCM369
-ENCM369,Messier,jrlong@ucalgary.ca,UofCensm369,2021_ENCM369
