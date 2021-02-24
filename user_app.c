@@ -100,7 +100,9 @@ void UserAppRun(void)
     static u32 u32Counter  = 0x00;
     
     
-    // These first two "if" statements look after the button that increments upward
+    // These first two "if" statements look after the button that increments upward.
+    
+    //When button is first pressed.
     if(((PORTB & 0x20) == 0x20) && ((u32PowerSwitch & 0x01) == 0x01))
     {
         u32Counter++;
@@ -108,7 +110,7 @@ void UserAppRun(void)
         _delay(0x100000);
     }
     
-    
+    //When button is first released.
     if(((PORTB & 0x20) == 0x00) && ((u32PowerSwitch & 0x01) == 0x00))
     {
        u32PowerSwitch += 0x01;
@@ -117,6 +119,8 @@ void UserAppRun(void)
     
     
     // This second pair of "if" statements look after the button that increments downward.
+    
+    //When button is first pressed.
     if(((PORTB & 0x08) == 0x08) && ((u32PowerSwitch & 0x10) == 0x10))
     {
         u32Counter--;
@@ -124,7 +128,7 @@ void UserAppRun(void)
         _delay(0x100000);
     }
     
-    
+    //When button is first released.
     if(((PORTB & 0x08) == 0x00) && ((u32PowerSwitch & 0x10) == 0x00))
     {
       u32PowerSwitch += 0x10;
@@ -133,6 +137,9 @@ void UserAppRun(void)
     
     
     //The value of LATA is changed here at the end of the function.
+    //u32Counter = u32Counter|0x80;
+    
+    //Copy value of u32Counter to LATA without turning off RA7.
     LATA = u32Counter|0x80;
     
     

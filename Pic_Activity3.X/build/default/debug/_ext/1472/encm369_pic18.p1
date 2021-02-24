@@ -1,14 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"46157 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"45902 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 45902: extern volatile unsigned char TRISB __attribute__((address(0x4C7)));
+[v _TRISB `Vuc ~T0 @X0 0 e@1223 ]
+"38414
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 38414: extern volatile unsigned char ANSELB __attribute__((address(0x408)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@1032 ]
+"46157
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 46157: extern volatile unsigned char PORTB __attribute__((address(0x4CF)));
 [v _PORTB `Vuc ~T0 @X0 0 e@1231 ]
-[v F183 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\builtins.h
-[v __delay `JF183 ~T0 @X0 0 e ]
-[p i __delay ]
-"45585 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"45840
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 45840: extern volatile unsigned char TRISA __attribute__((address(0x4C6)));
+[v _TRISA `Vuc ~T0 @X0 0 e@1222 ]
+"37918
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 37918: extern volatile unsigned char ANSELA __attribute__((address(0x400)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@1024 ]
+"45585
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 45585: extern volatile unsigned char LATA __attribute__((address(0x4BE)));
 [v _LATA `Vuc ~T0 @X0 0 e@1214 ]
+"37 ../encm369_pic18.c
+[; ;../encm369_pic18.c: 37: extern volatile u32 G_u32SystemTime1ms;
+[v _G_u32SystemTime1ms `Vul ~T0 @X0 0 e ]
+"38
+[; ;../encm369_pic18.c: 38: extern volatile u32 G_u32SystemTime1s;
+[v _G_u32SystemTime1s `Vul ~T0 @X0 0 e ]
 "30 ../configuration.h
 [p x FEXTOSC  =  OFF     ]
 "31
@@ -2530,115 +2544,75 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47642
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 47642: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"33 ../user_app.c
-[; ;../user_app.c: 33: volatile u8 G_u8UserAppFlags;
-[v _G_u8UserAppFlags `Vuc ~T0 @X0 1 e ]
-"76
-[; ;../user_app.c: 76: void UserAppInitialize(void)
-[v _UserAppInitialize `(v ~T0 @X0 1 ef ]
-"77
-[; ;../user_app.c: 77: {
+"70 ../encm369_pic18.c
+[; ;../encm369_pic18.c: 70: void ClockSetup(void)
+[v _ClockSetup `(v ~T0 @X0 1 ef ]
+"71
+[; ;../encm369_pic18.c: 71: {
 {
-[e :U _UserAppInitialize ]
+[e :U _ClockSetup ]
 [f ]
-"80
-[; ;../user_app.c: 80: }
+"74
+[; ;../encm369_pic18.c: 74: }
 [e :UE 2272 ]
 }
-"95
-[; ;../user_app.c: 95: void UserAppRun(void)
-[v _UserAppRun `(v ~T0 @X0 1 ef ]
-"96
-[; ;../user_app.c: 96: {
+"89
+[; ;../encm369_pic18.c: 89: void GpioSetup(void)
+[v _GpioSetup `(v ~T0 @X0 1 ef ]
+"90
+[; ;../encm369_pic18.c: 90: {
 {
-[e :U _UserAppRun ]
+[e :U _GpioSetup ]
 [f ]
+"92
+[; ;../encm369_pic18.c: 92:   TRISB = 0x38;
+[e = _TRISB -> -> 56 `i `uc ]
+"93
+[; ;../encm369_pic18.c: 93:   ANSELB = 0x00;
+[e = _ANSELB -> -> 0 `i `uc ]
+"94
+[; ;../encm369_pic18.c: 94:   PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"98
+[; ;../encm369_pic18.c: 98:   TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
 "99
-[; ;../user_app.c: 99:     static u32 u32PowerSwitch = 0x11;
-[v F15920 `ul ~T0 @X0 1 s u32PowerSwitch ]
-[i F15920
--> -> -> 17 `i `l `ul
-]
+[; ;../encm369_pic18.c: 99:   ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
 "100
-[; ;../user_app.c: 100:     static u32 u32Counter = 0x00;
-[v F15921 `ul ~T0 @X0 1 s u32Counter ]
-[i F15921
--> -> -> 0 `i `l `ul
-]
-"106
-[; ;../user_app.c: 106:     if(((PORTB & 0x20) == 0x20) && ((u32PowerSwitch & 0x01) == 0x01))
-[e $ ! && == & -> _PORTB `i -> 32 `i -> 32 `i == & F15920 -> -> -> 1 `i `l `ul -> -> -> 1 `i `l `ul 2274  ]
-"107
-[; ;../user_app.c: 107:     {
-{
-"108
-[; ;../user_app.c: 108:         u32Counter++;
-[e ++ F15921 -> -> -> 1 `i `l `ul ]
-"109
-[; ;../user_app.c: 109:         u32PowerSwitch -= 0x01;
-[e =- F15920 -> -> -> 1 `i `l `ul ]
-"110
-[; ;../user_app.c: 110:         _delay(0x100000);
-[e ( __delay (1 -> -> 1048576 `l `ul ]
-"111
-[; ;../user_app.c: 111:     }
-}
-[e :U 2274 ]
-"114
-[; ;../user_app.c: 114:     if(((PORTB & 0x20) == 0x00) && ((u32PowerSwitch & 0x01) == 0x00))
-[e $ ! && == & -> _PORTB `i -> 32 `i -> 0 `i == & F15920 -> -> -> 1 `i `l `ul -> -> -> 0 `i `l `ul 2275  ]
-"115
-[; ;../user_app.c: 115:     {
-{
-"116
-[; ;../user_app.c: 116:        u32PowerSwitch += 0x01;
-[e =+ F15920 -> -> -> 1 `i `l `ul ]
-"117
-[; ;../user_app.c: 117:        _delay(0x100000);
-[e ( __delay (1 -> -> 1048576 `l `ul ]
-"118
-[; ;../user_app.c: 118:     }
-}
-[e :U 2275 ]
-"124
-[; ;../user_app.c: 124:     if(((PORTB & 0x08) == 0x08) && ((u32PowerSwitch & 0x10) == 0x10))
-[e $ ! && == & -> _PORTB `i -> 8 `i -> 8 `i == & F15920 -> -> -> 16 `i `l `ul -> -> -> 16 `i `l `ul 2276  ]
-"125
-[; ;../user_app.c: 125:     {
-{
-"126
-[; ;../user_app.c: 126:         u32Counter--;
-[e -- F15921 -> -> -> 1 `i `l `ul ]
-"127
-[; ;../user_app.c: 127:         u32PowerSwitch -= 0x10;
-[e =- F15920 -> -> -> 16 `i `l `ul ]
-"128
-[; ;../user_app.c: 128:         _delay(0x100000);
-[e ( __delay (1 -> -> 1048576 `l `ul ]
-"129
-[; ;../user_app.c: 129:     }
-}
-[e :U 2276 ]
-"132
-[; ;../user_app.c: 132:     if(((PORTB & 0x08) == 0x00) && ((u32PowerSwitch & 0x10) == 0x00))
-[e $ ! && == & -> _PORTB `i -> 8 `i -> 0 `i == & F15920 -> -> -> 16 `i `l `ul -> -> -> 0 `i `l `ul 2277  ]
-"133
-[; ;../user_app.c: 133:     {
-{
-"134
-[; ;../user_app.c: 134:       u32PowerSwitch += 0x10;
-[e =+ F15920 -> -> -> 16 `i `l `ul ]
-"135
-[; ;../user_app.c: 135:        _delay(0x100000);
-[e ( __delay (1 -> -> 1048576 `l `ul ]
-"136
-[; ;../user_app.c: 136:     }
-}
-[e :U 2277 ]
-"143
-[; ;../user_app.c: 143:     LATA = u32Counter|0x80;
-[e = _LATA -> | F15921 -> -> -> 128 `i `l `ul `uc ]
-"149
-[; ;../user_app.c: 149: }
+[; ;../encm369_pic18.c: 100:   LATA = 0x80;
+[e = _LATA -> -> 128 `i `uc ]
+"103
+[; ;../encm369_pic18.c: 103: }
 [e :UE 2273 ]
+}
+"118
+[; ;../encm369_pic18.c: 118: void SysTickSetup(void)
+[v _SysTickSetup `(v ~T0 @X0 1 ef ]
+"119
+[; ;../encm369_pic18.c: 119: {
+{
+[e :U _SysTickSetup ]
+[f ]
+"120
+[; ;../encm369_pic18.c: 120:   G_u32SystemTime1ms = 0;
+[e = _G_u32SystemTime1ms -> -> -> 0 `i `l `ul ]
+"121
+[; ;../encm369_pic18.c: 121:   G_u32SystemTime1s = 0;
+[e = _G_u32SystemTime1s -> -> -> 0 `i `l `ul ]
+"123
+[; ;../encm369_pic18.c: 123: }
+[e :UE 2274 ]
+}
+"140
+[; ;../encm369_pic18.c: 140: void SystemSleep(void)
+[v _SystemSleep `(v ~T0 @X0 1 ef ]
+"141
+[; ;../encm369_pic18.c: 141: {
+{
+[e :U _SystemSleep ]
+[f ]
+"143
+[; ;../encm369_pic18.c: 143: }
+[e :UE 2275 ]
 }

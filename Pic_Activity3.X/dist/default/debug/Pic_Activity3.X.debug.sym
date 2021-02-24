@@ -261,9 +261,9 @@ text2 1FE50 1FE51 CODE 1FE50 0
 text3 1FE4E 1FE4F CODE 1FE4E 0
 text6 1FE4C 1FE4D CODE 1FE4C 0
 %locals
-dist/default/production\Pic_Activity3.X.production.o
+dist/default/debug\Pic_Activity3.X.debug.o
 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
-C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sjnc.s
+C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s1i0.s
 5098 1FEB6 0 CODE 0
 5100 1FEB6 0 CODE 0
 5103 1FEB6 0 CODE 0

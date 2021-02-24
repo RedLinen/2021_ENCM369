@@ -1,4 +1,4 @@
-# 1 "../user_app.c"
+# 1 "../encm369_pic18.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "../user_app.c" 2
-# 26 "../user_app.c"
+# 1 "../encm369_pic18.c" 2
+# 24 "../encm369_pic18.c"
 # 1 "../configuration.h" 1
 # 30 "../configuration.h"
 #pragma config FEXTOSC = OFF
@@ -27290,81 +27290,42 @@ void SystemSleep(void);
 void UserAppInitialize(void);
 void UserAppRun(void);
 # 106 "../configuration.h" 2
-# 26 "../user_app.c" 2
-
-
-
-
-
-
-
-volatile u8 G_u8UserAppFlags;
-
-
-
-
+# 24 "../encm369_pic18.c" 2
+# 37 "../encm369_pic18.c"
 extern volatile u32 G_u32SystemTime1ms;
 extern volatile u32 G_u32SystemTime1s;
 extern volatile u32 G_u32SystemFlags;
-# 76 "../user_app.c"
-void UserAppInitialize(void)
+# 70 "../encm369_pic18.c"
+void ClockSetup(void)
 {
 
 
 }
-# 95 "../user_app.c"
-void UserAppRun(void)
+# 89 "../encm369_pic18.c"
+void GpioSetup(void)
 {
 
-
-    static u32 u32PowerSwitch = 0x11;
-    static u32 u32Counter = 0x00;
-
-
+  TRISB = 0x38;
+  ANSELB = 0x00;
+  PORTB = 0x00;
 
 
 
-    if(((PORTB & 0x20) == 0x20) && ((u32PowerSwitch & 0x01) == 0x01))
-    {
-        u32Counter++;
-        u32PowerSwitch -= 0x01;
-        _delay(0x100000);
-    }
+  TRISA = 0x00;
+  ANSELA = 0x00;
+  LATA = 0x80;
 
 
-    if(((PORTB & 0x20) == 0x00) && ((u32PowerSwitch & 0x01) == 0x00))
-    {
-       u32PowerSwitch += 0x01;
-       _delay(0x100000);
-    }
+}
+# 118 "../encm369_pic18.c"
+void SysTickSetup(void)
+{
+  G_u32SystemTime1ms = 0;
+  G_u32SystemTime1s = 0;
 
-
-
-
-
-    if(((PORTB & 0x08) == 0x08) && ((u32PowerSwitch & 0x10) == 0x10))
-    {
-        u32Counter--;
-        u32PowerSwitch -= 0x10;
-        _delay(0x100000);
-    }
-
-
-    if(((PORTB & 0x08) == 0x00) && ((u32PowerSwitch & 0x10) == 0x00))
-    {
-      u32PowerSwitch += 0x10;
-       _delay(0x100000);
-    }
-
-
-
-
-
-
-    LATA = u32Counter|0x80;
-
-
-
-
+}
+# 140 "../encm369_pic18.c"
+void SystemSleep(void)
+{
 
 }
