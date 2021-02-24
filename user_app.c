@@ -95,7 +95,7 @@ Promises:
 void UserAppRun(void)
 {
     
-    //u32PowerSwitch is used to prevent the program from counting up or down more then once when the button is held down
+    //u32PowerSwitch is used to prevent the program from counting up or down more then once when a button is held down
     static u32 u32PowerSwitch = 0x11;
     static u32 u32Counter  = 0x00;
     
@@ -116,7 +116,7 @@ void UserAppRun(void)
     }
     
     
-    // This second pair of if statements look after the button that increments downward.
+    // This second pair of "if" statements look after the button that increments downward.
     if(((PORTB & 0x08) == 0x08) && ((u32PowerSwitch & 0x10) == 0x10))
     {
         u32Counter--;
