@@ -94,29 +94,50 @@ Promises:
 */
 void UserAppRun(void)
 {
-    u32 u32CounterForOuterLoop = 0x00; //initialize counters
-    u32 u32CounterForInnerLoop = 0x00;
+    
+    //u32PowerSwitch is used to prevent the program from counting up or down more then once when the button is held down
+    static u32 u32PowerSwitch = 0x11;
+    static u32 u32Counter  = 0x00;
+    
+    
+    // These first two "if" statements look after the button that increments upward
+    if(((PORTB & 0x20) == 0x20) && ((u32PowerSwitch & 0x01) == 0x01))
+    {
+        u32Counter++;
+        u32PowerSwitch -= 0x01;
+        _delay(0x100000);
+    }
+    
+    
+    if(((PORTB & 0x20) == 0x00) && ((u32PowerSwitch & 0x01) == 0x00))
+    {
+       u32PowerSwitch += 0x01;
+       _delay(0x100000);
+    }
+    
+    
+    // This second pair of if statements look after the button that increments downward.
+    if(((PORTB & 0x08) == 0x08) && ((u32PowerSwitch & 0x10) == 0x10))
+    {
+        u32Counter--;
+        u32PowerSwitch -= 0x10;
+        _delay(0x100000);
+    }
+    
+    
+    if(((PORTB & 0x08) == 0x00) && ((u32PowerSwitch & 0x10) == 0x00))
+    {
+      u32PowerSwitch += 0x10;
+       _delay(0x100000);  
+    }
+    
+    
+    //The value of LATA is changed here at the end of the function.
+    LATA = u32Counter|0x80;
+    
+    
     
    
-    while(u32CounterForOuterLoop < 63)   //LATA is incremented in this "while" loop
-    {                                    //to make the attached LEDs turn on and off 
-                                             //in a binary counting pattern
-        LATA = LATA ++;                  
-        u32CounterForOuterLoop ++;                                
-            
-            
-        while(u32CounterForInnerLoop < 225000) //This inner "while" loop 
-        {                                      //just burns off time
-                    
-            u32CounterForInnerLoop ++;
-                    
-        }/*End inner 'while' loop */
-
-            
-        u32CounterForInnerLoop = 0x00; /*Reset the counter for the inner loop*/
-    } /*End outer 'while' loop */
-    LATA ^= 0x3F; /*LATA is effectively reset to 0x80 here.*/
-
     
 } /* end UserAppRun */
 
