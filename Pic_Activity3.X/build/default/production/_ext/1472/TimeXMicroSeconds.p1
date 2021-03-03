@@ -2552,50 +2552,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;../TimeXMicroSeconds.c: 30:     u16 u16SomethingWeirdIsHappening= 0x00;
 [v _u16SomethingWeirdIsHappening `us ~T0 @X0 1 a ]
 [e = _u16SomethingWeirdIsHappening -> -> 0 `i `us ]
-"34
-[; ;../TimeXMicroSeconds.c: 34:     u16 u16Time = 0xFFFF - u16DesiredTime;
+"33
+[; ;../TimeXMicroSeconds.c: 33:     u16 u16Time = 0xFFFF - u16DesiredTime;
 [v _u16Time `us ~T0 @X0 1 a ]
 [e = _u16Time -> - -> 65535 `ui -> _u16DesiredTime `ui `us ]
-"38
-[; ;../TimeXMicroSeconds.c: 38:     TMR0L = u16Time & 0x00FF;
+"37
+[; ;../TimeXMicroSeconds.c: 37:     TMR0L = u16Time & 0x00FF;
 [e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"39
-[; ;../TimeXMicroSeconds.c: 39:     TMR0H = (u16Time & 0xFF00) / 0x100;
+"38
+[; ;../TimeXMicroSeconds.c: 38:     TMR0H = (u16Time & 0xFF00) / 0x100;
 [e = _TMR0H -> / & -> _u16Time `ui -> 65280 `ui -> -> 256 `i `ui `uc ]
-"43
-[; ;../TimeXMicroSeconds.c: 43:     if((PIR3 & 0b10000000) != 0)
+"42
+[; ;../TimeXMicroSeconds.c: 42:     if((PIR3 & 0b10000000) != 0)
 [e $ ! != & -> _PIR3 `i -> 128 `i -> 0 `i 2273  ]
-"44
-[; ;../TimeXMicroSeconds.c: 44:     {
+"43
+[; ;../TimeXMicroSeconds.c: 43:     {
 {
-"45
-[; ;../TimeXMicroSeconds.c: 45:         PIR3 ^= 0b10000000;
+"44
+[; ;../TimeXMicroSeconds.c: 44:         PIR3 ^= 0b10000000;
 [e =^ _PIR3 -> -> 128 `i `Vuc ]
-"47
-[; ;../TimeXMicroSeconds.c: 47:     }
+"46
+[; ;../TimeXMicroSeconds.c: 46:     }
 }
 [e $U 2274  ]
-"48
-[; ;../TimeXMicroSeconds.c: 48:     else
+"47
+[; ;../TimeXMicroSeconds.c: 47:     else
 [e :U 2273 ]
-"49
-[; ;../TimeXMicroSeconds.c: 49:     {
+"48
+[; ;../TimeXMicroSeconds.c: 48:     {
 {
-"50
-[; ;../TimeXMicroSeconds.c: 50:         u16SomethingWeirdIsHappening = 0x01;
+"49
+[; ;../TimeXMicroSeconds.c: 49:         u16SomethingWeirdIsHappening = 0x01;
 [e = _u16SomethingWeirdIsHappening -> -> 1 `i `us ]
-"51
-[; ;../TimeXMicroSeconds.c: 51:     }
+"50
+[; ;../TimeXMicroSeconds.c: 50:     }
 }
 [e :U 2274 ]
-"55
-[; ;../TimeXMicroSeconds.c: 55:     T0CON0 ^= 0b10000000;
+"54
+[; ;../TimeXMicroSeconds.c: 54:     T0CON0 ^= 0b10000000;
 [e =^ _T0CON0 -> -> 128 `i `Vuc ]
-"59
-[; ;../TimeXMicroSeconds.c: 59:     return u16SomethingWeirdIsHappening;
+"58
+[; ;../TimeXMicroSeconds.c: 58:     return u16SomethingWeirdIsHappening;
 [e ) _u16SomethingWeirdIsHappening ]
 [e $UE 2272  ]
-"61
-[; ;../TimeXMicroSeconds.c: 61: }
+"60
+[; ;../TimeXMicroSeconds.c: 60: }
 [e :UE 2272 ]
 }

@@ -30,13 +30,12 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
     u16 u16SomethingWeirdIsHappening= 0x00;
     
     //Need to subtract number we want counted to from maximum number we could count to.
-    //Also need to split that number so we can feed it into TMROH and TMROL.
     u16 u16Time = 0xFFFF - u16DesiredTime;
     
     
     //Load the registers
-    TMR0L =  u16Time & 0x00FF;     //u8GreaterBits;      
-    TMR0H =  (u16Time & 0xFF00) / 0x100;            //u8LesserBits;       
+    TMR0L =  u16Time & 0x00FF;          
+    TMR0H =  (u16Time & 0xFF00) / 0x100;      
     
     
     //Make sure to not accidentally trip TMR0IF if it's low for some reason.

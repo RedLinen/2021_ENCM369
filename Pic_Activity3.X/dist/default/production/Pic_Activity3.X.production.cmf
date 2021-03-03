@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+$C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1FFFC 1FFFC 4 1
 reset_vec CODE 0 0 0 4 1
@@ -116,15 +116,15 @@ $dist/default/production\Pic_Activity3.X.production.o
 1FF12 text3 CODE >21:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 1FF12 text3 CODE >28:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 1FF18 text3 CODE >30:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF18 text3 CODE >34:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF20 text3 CODE >38:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF26 text3 CODE >39:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF2A text3 CODE >43:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF38 text3 CODE >45:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF3C text3 CODE >47:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF40 text3 CODE >50:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF40 text3 CODE >55:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
-1FF44 text3 CODE >61:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF18 text3 CODE >33:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF20 text3 CODE >37:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF26 text3 CODE >38:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF2A text3 CODE >42:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF38 text3 CODE >44:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF3C text3 CODE >46:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF40 text3 CODE >49:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF40 text3 CODE >54:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
+1FF44 text3 CODE >60:D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 1FE8E text2 CODE >76:D:\Git\2021_ENCM369/user_app.c
 1FE8E text2 CODE >79:D:\Git\2021_ENCM369/user_app.c
 1FE92 text2 CODE >82:D:\Git\2021_ENCM369/user_app.c
@@ -159,32 +159,32 @@ $dist/default/production\Pic_Activity3.X.production.o
 1FF5C text0 CODE >66:D:\Git\2021_ENCM369/main.c
 1FF60 text0 CODE >67:D:\Git\2021_ENCM369/main.c
 1FF6C text0 CODE >69:D:\Git\2021_ENCM369/main.c
-1FEE0 cinit CODE >6753:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE0 cinit CODE >6755:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE0 cinit CODE >6758:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE0 cinit CODE >6794:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE2 cinit CODE >6795:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE4 cinit CODE >6796:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE6 cinit CODE >6797:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEE8 cinit CODE >6798:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEEA cinit CODE >6799:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEEC cinit CODE >6800:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEF0 cinit CODE >6801:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEF4 cinit CODE >6802:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEF4 cinit CODE >6803:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEF6 cinit CODE >6804:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEFA cinit CODE >6805:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEFC cinit CODE >6806:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FEFE cinit CODE >6807:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF00 cinit CODE >6811:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF04 cinit CODE >6812:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF06 cinit CODE >6813:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF06 cinit CODE >6814:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF08 cinit CODE >6815:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF0A cinit CODE >6816:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF0C cinit CODE >6822:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF0C cinit CODE >6824:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
-1FF0E cinit CODE >6825:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
+1FEE0 cinit CODE >6753:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE0 cinit CODE >6755:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE0 cinit CODE >6758:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE0 cinit CODE >6794:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE2 cinit CODE >6795:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE4 cinit CODE >6796:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE6 cinit CODE >6797:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEE8 cinit CODE >6798:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEEA cinit CODE >6799:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEEC cinit CODE >6800:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEF0 cinit CODE >6801:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEF4 cinit CODE >6802:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEF4 cinit CODE >6803:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEF6 cinit CODE >6804:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEFA cinit CODE >6805:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEFC cinit CODE >6806:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FEFE cinit CODE >6807:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF00 cinit CODE >6811:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF04 cinit CODE >6812:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF06 cinit CODE >6813:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF06 cinit CODE >6814:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF08 cinit CODE >6815:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF0A cinit CODE >6816:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF0C cinit CODE >6822:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF0C cinit CODE >6824:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
+1FF0E cinit CODE >6825:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -203,14 +203,14 @@ __Hspace_1 522 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Pic_Activity3.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Pic_Activity3.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Pic_Activity3.X.production.o
 _LATA 4BE 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 _PIR3 4B1 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+___sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 _main 1FF46 0 CODE 0 text0 dist/default/production\Pic_Activity3.X.production.o
-start 1FFFC 0 CODE 0 init C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+start 1FFFC 0 CODE 0 init C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Pic_Activity3.X.production.o
 UserAppRun@u16PowerSwitch 50D 0 COMRAM 1 bssCOMRAM dist/default/production\Pic_Activity3.X.production.o
@@ -218,11 +218,11 @@ __size_of_SystemSleep 0 0 ABS 0 - dist/default/production\Pic_Activity3.X.produc
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Pic_Activity3.X.production.o
 __end_of_TimeXMicroSeconds 1FF46 0 CODE 0 text3 dist/default/production\Pic_Activity3.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Pic_Activity3.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-intlevel0 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-intlevel1 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-intlevel2 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-intlevel3 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+__accesstop 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+intlevel0 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+intlevel1 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+intlevel2 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+intlevel3 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Pic_Activity3.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Pic_Activity3.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Pic_Activity3.X.production.o
@@ -232,8 +232,8 @@ _UserAppRun 1FF84 0 CODE 0 text1 dist/default/production\Pic_Activity3.X.product
 _ANSELA 400 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 _ANSELB 408 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
 _G_u32SystemTime1s 505 0 COMRAM 1 bssCOMRAM dist/default/production\Pic_Activity3.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Pic_Activity3.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Pic_Activity3.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Pic_Activity3.X.production.o
@@ -302,7 +302,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\Pic_Activity3.X.production.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/production\Pic_Activity3.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Pic_Activity3.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Pic_Activity3.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 _SystemSleep 1FE86 0 CODE 0 text4 dist/default/production\Pic_Activity3.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Pic_Activity3.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\Pic_Activity3.X.production.o
@@ -399,8 +399,8 @@ __end_of_SysTickSetup 1FEE0 0 CODE 0 text5 dist/default/production\Pic_Activity3
 _UserAppInitialize 1FE8E 0 CODE 0 text2 dist/default/production\Pic_Activity3.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Pic_Activity3.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Pic_Activity3.X.production.o
-stackhi 25FF 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
-stacklo 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+stackhi 25FF 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
+stacklo 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 UserAppRun@u8TempForLata 51B 0 COMRAM 1 cstackCOMRAM dist/default/production\Pic_Activity3.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Pic_Activity3.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\Pic_Activity3.X.production.o
@@ -426,7 +426,7 @@ __ptext5 1FEBE 0 CODE 0 text5 dist/default/production\Pic_Activity3.X.production
 __ptext6 1FEA2 0 CODE 0 text6 dist/default/production\Pic_Activity3.X.production.o
 __ptext7 1FE84 0 CODE 0 text7 dist/default/production\Pic_Activity3.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Pic_Activity3.X.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\shnc.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Pic_Activity3.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Pic_Activity3.X.production.o
 _ClockSetup 1FE84 0 CODE 0 text7 dist/default/production\Pic_Activity3.X.production.o

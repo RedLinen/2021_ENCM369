@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Wed Mar 03 06:36:57 2021
+                                                                                               Wed Mar 03 06:52:15 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F27Q43
@@ -542,22 +542,22 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    484  01FF16  1B1A               	xorwf	26,f,b	;volatile
    485  01FF18                     
    486                           ; BSR set to: 3
-   487                           ;../TimeXMicroSeconds.c: 34:     u16 u16Time = 0xFFFF - u16DesiredTime;
+   487                           ;../TimeXMicroSeconds.c: 33:     u16 u16Time = 0xFFFF - u16DesiredTime;
    488  01FF18  1C14               	comf	TimeXMicroSeconds@u16DesiredTime^(0+1280),w,c
    489  01FF1A  6E18               	movwf	TimeXMicroSeconds@u16Time^(0+1280),c
    490  01FF1C  1C15               	comf	(TimeXMicroSeconds@u16DesiredTime+1)^(0+1280),w,c
    491  01FF1E  6E19               	movwf	(TimeXMicroSeconds@u16Time+1)^(0+1280),c
    492  01FF20                     
    493                           ; BSR set to: 3
-   494                           ;../TimeXMicroSeconds.c: 38:     TMR0L = u16Time & 0x00FF;
+   494                           ;../TimeXMicroSeconds.c: 37:     TMR0L = u16Time & 0x00FF;
    495  01FF20  0061  F460  F318   	movff	TimeXMicroSeconds@u16Time,792	;volatile
    496                           
-   497                           ;../TimeXMicroSeconds.c: 39:     TMR0H = (u16Time & 0xFF00) / 0x100;
+   497                           ;../TimeXMicroSeconds.c: 38:     TMR0H = (u16Time & 0xFF00) / 0x100;
    498  01FF26  5019               	movf	(TimeXMicroSeconds@u16Time+1)^(0+1280),w,c
    499  01FF28  6F19               	movwf	25,b	;volatile
    500  01FF2A                     
    501                           ; BSR set to: 3
-   502                           ;../TimeXMicroSeconds.c: 43:     if((PIR3 & 0b10000000) != 0)
+   502                           ;../TimeXMicroSeconds.c: 42:     if((PIR3 & 0b10000000) != 0)
    503  01FF2A  AEB1               	btfss	177,7,c	;volatile
    504  01FF2C  EF9A  F0FF         	goto	u61
    505  01FF30  EF9C  F0FF         	goto	u60
@@ -566,18 +566,18 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    508  01FF38                     u60:
    509  01FF38                     
    510                           ; BSR set to: 3
-   511                           ;../TimeXMicroSeconds.c: 44:     {;../TimeXMicroSeconds.c: 45:         PIR3 ^= 0b1000000
+   511                           ;../TimeXMicroSeconds.c: 43:     {;../TimeXMicroSeconds.c: 44:         PIR3 ^= 0b1000000
       +                          0;
    512  01FF38  0E80               	movlw	128
    513  01FF3A  1AB1               	xorwf	177,f,c	;volatile
    514                           
-   515                           ;../TimeXMicroSeconds.c: 47:     }
+   515                           ;../TimeXMicroSeconds.c: 46:     }
    516  01FF3C  EFA0  F0FF         	goto	l887
    517  01FF40                     l885:
    518  01FF40                     l887:
    519                           
    520                           ; BSR set to: 3
-   521                           ;../TimeXMicroSeconds.c: 55:     T0CON0 ^= 0b10000000;
+   521                           ;../TimeXMicroSeconds.c: 54:     T0CON0 ^= 0b10000000;
    522  01FF40  0E80               	movlw	128
    523  01FF42  1B1A               	xorwf	26,f,b	;volatile
    524  01FF44                     
@@ -1377,7 +1377,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Wed Mar 03 06:36:57 2021
+Symbol Table                                                                                   Wed Mar 03 06:52:15 2021
 
                __size_of_SysTickSetup 0022                                    l22 FEBC  
                                   l25 FEDE                                    l19 FE84  

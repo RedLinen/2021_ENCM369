@@ -103,11 +103,11 @@
 "21 D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 [v _TimeXMicroSeconds TimeXMicroSeconds `(us  1 e 2 0 ]
 {
-"34
+"33
 [v TimeXMicroSeconds@u16Time u16Time `us  1 a 2 4 ]
 "21
 [v TimeXMicroSeconds@u16DesiredTime u16DesiredTime `us  1 p 2 0 ]
-"61
+"60
 } 0
 "138 D:\Git\2021_ENCM369/encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]

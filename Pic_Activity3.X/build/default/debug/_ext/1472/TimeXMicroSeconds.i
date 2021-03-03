@@ -27310,7 +27310,6 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
     u16 u16SomethingWeirdIsHappening= 0x00;
 
 
-
     u16 u16Time = 0xFFFF - u16DesiredTime;
 
 
