@@ -4,4 +4,5 @@ build/default/production/_ext/1472/encm369_pic18.p1:  \
 ../typedefs.h  \
 ../main.h  \
 ../encm369_pic18.h  \
-../user_app.h 
+../user_app.h  \
+../TimeXMicroSeconds.h 

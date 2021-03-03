@@ -1,4 +1,4 @@
-# 1 "../main.c"
+# 1 "../TimeXMicroSeconds.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,11 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "../main.c" 2
-
-
-
-
+# 1 "../TimeXMicroSeconds.c" 2
 
 # 1 "../configuration.h" 1
 # 30 "../configuration.h"
@@ -27300,64 +27296,46 @@ void UserAppRun(void);
 # 24 "../TimeXMicroSeconds.h"
 u16 TimeXMicroSeconds(u16 time);
 # 108 "../configuration.h" 2
-# 6 "../main.c" 2
-
-
-
-
-
-
-
-
-volatile u32 G_u32SystemTime1ms = 0;
-volatile u32 G_u32SystemTime1s = 0;
-volatile u32 G_u32SystemFlags = 0;
-# 35 "../main.c"
-void main(void)
+# 2 "../TimeXMicroSeconds.c" 2
+# 21 "../TimeXMicroSeconds.c"
+u16 TimeXMicroSeconds(u16 u16DesiredTime)
 {
-  G_u32SystemFlags |= (u32)0x80000000;
-
-
-  ClockSetup();
-  SysTickSetup();
-  GpioSetup();
-
-
-
-
-  UserAppInitialize();
-
-
-
-
-  while(1)
-  {
 
 
 
 
 
+    T0CON0 ^= 0b10000000;
 
-    UserAppRun();
+    u16 u16SomethingWeirdIsHappening= 0x00;
 
 
 
-                   ;
+    u16 u16Time = 0xFFFF - u16DesiredTime;
 
-    SystemSleep();
-    TimeXMicroSeconds(1000);
 
-    while(PIR3 <= 0b01111111)
+
+    TMR0L = u16Time & 0x00FF;
+    TMR0H = (u16Time & 0xFF00) / 0x100;
+
+
+
+    if((PIR3 & 0b10000000) != 0)
     {
-        ;
+        PIR3 ^= 0b10000000;
+
+    }
+    else
+    {
+        u16SomethingWeirdIsHappening = 0x01;
     }
 
-                  ;
+
+
+    T0CON0 ^= 0b10000000;
 
 
 
-
-
-  }
+    return u16SomethingWeirdIsHappening;
 
 }

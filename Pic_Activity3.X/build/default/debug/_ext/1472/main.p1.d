@@ -1,5 +1,5 @@
-build/default/production/_ext/1472/user_app.p1:  \
-../user_app.c  \
+build/default/debug/_ext/1472/main.p1:  \
+../main.c  \
 ../configuration.h  \
 ../typedefs.h  \
 ../main.h  \

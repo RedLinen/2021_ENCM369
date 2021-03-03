@@ -1,22 +1,16 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"45585 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
-[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 45585: extern volatile unsigned char LATA __attribute__((address(0x4BE)));
-[v _LATA `Vuc ~T0 @X0 0 e@1214 ]
-"22627
+"22627 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22627: extern volatile unsigned char T0CON0 __attribute__((address(0x31A)));
 [v _T0CON0 `Vuc ~T0 @X0 0 e@794 ]
-"22725
-[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22725: extern volatile unsigned char T0CON1 __attribute__((address(0x31B)));
-[v _T0CON1 `Vuc ~T0 @X0 0 e@795 ]
 "22235
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22235: extern volatile unsigned char TMR0L __attribute__((address(0x318)));
 [v _TMR0L `Vuc ~T0 @X0 0 e@792 ]
 "22373
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22373: extern volatile unsigned char TMR0H __attribute__((address(0x319)));
 [v _TMR0H `Vuc ~T0 @X0 0 e@793 ]
-"46157
-[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 46157: extern volatile unsigned char PORTB __attribute__((address(0x4CF)));
-[v _PORTB `Vuc ~T0 @X0 0 e@1231 ]
+"44870
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 44870: extern volatile unsigned char PIR3 __attribute__((address(0x4B1)));
+[v _PIR3 `Vuc ~T0 @X0 0 e@1201 ]
 "30 ../configuration.h
 [p x FEXTOSC  =  OFF     ]
 "31
@@ -2538,198 +2532,70 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47642
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 47642: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"33 ../user_app.c
-[; ;../user_app.c: 33: volatile u8 G_u8UserAppFlags;
-[v _G_u8UserAppFlags `Vuc ~T0 @X0 1 e ]
-"76
-[; ;../user_app.c: 76: void UserAppInitialize(void)
-[v _UserAppInitialize `(v ~T0 @X0 1 ef ]
-"77
-[; ;../user_app.c: 77: {
+"21 ../TimeXMicroSeconds.c
+[; ;../TimeXMicroSeconds.c: 21: u16 TimeXMicroSeconds(u16 u16DesiredTime)
+[v _TimeXMicroSeconds `(us ~T0 @X0 1 ef1`us ]
+"22
+[; ;../TimeXMicroSeconds.c: 22: {
 {
-[e :U _UserAppInitialize ]
+[e :U _TimeXMicroSeconds ]
+"21
+[; ;../TimeXMicroSeconds.c: 21: u16 TimeXMicroSeconds(u16 u16DesiredTime)
+[v _u16DesiredTime `us ~T0 @X0 1 r1 ]
+"22
+[; ;../TimeXMicroSeconds.c: 22: {
 [f ]
-"79
-[; ;../user_app.c: 79:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"82
-[; ;../user_app.c: 82:     T0CON0 = 0b10110000;
-[e = _T0CON0 -> -> 176 `i `uc ]
-"83
-[; ;../user_app.c: 83:     T0CON1 = 0b01010100;
-[e = _T0CON1 -> -> 84 `i `uc ]
-"84
-[; ;../user_app.c: 84:     TMR0L;
-[e _TMR0L ]
-"85
-[; ;../user_app.c: 85:     TMR0H;
-[e _TMR0H ]
-"87
-[; ;../user_app.c: 87: }
-[e :UE 2272 ]
+"28
+[; ;../TimeXMicroSeconds.c: 28:     T0CON0 ^= 0b10000000;
+[e =^ _T0CON0 -> -> 128 `i `Vuc ]
+"30
+[; ;../TimeXMicroSeconds.c: 30:     u16 u16SomethingWeirdIsHappening= 0x00;
+[v _u16SomethingWeirdIsHappening `us ~T0 @X0 1 a ]
+[e = _u16SomethingWeirdIsHappening -> -> 0 `i `us ]
+"34
+[; ;../TimeXMicroSeconds.c: 34:     u16 u16Time = 0xFFFF - u16DesiredTime;
+[v _u16Time `us ~T0 @X0 1 a ]
+[e = _u16Time -> - -> 65535 `ui -> _u16DesiredTime `ui `us ]
+"38
+[; ;../TimeXMicroSeconds.c: 38:     TMR0L = u16Time & 0x00FF;
+[e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
+"39
+[; ;../TimeXMicroSeconds.c: 39:     TMR0H = (u16Time & 0xFF00) / 0x100;
+[e = _TMR0H -> / & -> _u16Time `ui -> 65280 `ui -> -> 256 `i `ui `uc ]
+"43
+[; ;../TimeXMicroSeconds.c: 43:     if((PIR3 & 0b10000000) != 0)
+[e $ ! != & -> _PIR3 `i -> 128 `i -> 0 `i 2273  ]
+"44
+[; ;../TimeXMicroSeconds.c: 44:     {
+{
+"45
+[; ;../TimeXMicroSeconds.c: 45:         PIR3 ^= 0b10000000;
+[e =^ _PIR3 -> -> 128 `i `Vuc ]
+"47
+[; ;../TimeXMicroSeconds.c: 47:     }
 }
-"102
-[; ;../user_app.c: 102: void UserAppRun(void)
-[v _UserAppRun `(v ~T0 @X0 1 ef ]
-"103
-[; ;../user_app.c: 103: {
+[e $U 2274  ]
+"48
+[; ;../TimeXMicroSeconds.c: 48:     else
+[e :U 2273 ]
+"49
+[; ;../TimeXMicroSeconds.c: 49:     {
 {
-[e :U _UserAppRun ]
-[f ]
-"105
-[; ;../user_app.c: 105:     static u16 u16Counter = 0x00;
-[v F15922 `us ~T0 @X0 1 s u16Counter ]
-[i F15922
--> -> 0 `i `us
-]
-"106
-[; ;../user_app.c: 106:     static u16 u16LightPatternIncrementer = 0x00;
-[v F15923 `us ~T0 @X0 1 s u16LightPatternIncrementer ]
-[i F15923
--> -> 0 `i `us
-]
-"109
-[; ;../user_app.c: 109:     static u16 u16PowerSwitch = 0x00;
-[v F15924 `us ~T0 @X0 1 s u16PowerSwitch ]
-[i F15924
--> -> 0 `i `us
-]
-"111
-[; ;../user_app.c: 111:     u8 u8YesIWouldLikeToUseTheButtons = 0x0;
-[v _u8YesIWouldLikeToUseTheButtons `uc ~T0 @X0 1 a ]
-[e = _u8YesIWouldLikeToUseTheButtons -> -> 0 `i `uc ]
-[v F15926 `uc ~T0 @X0 -> 6 `i s ]
-[i F15926
-:U ..
-"113
-[; ;../user_app.c: 113:     u8 au8LightPatterns[] = {0b00111111, 0b00001100, 0b00010010, 0b00110011, 0b000011110,0b00001100};
--> -> 63 `i `uc
--> -> 12 `i `uc
--> -> 18 `i `uc
--> -> 51 `i `uc
--> -> 30 `i `uc
--> -> 12 `i `uc
-..
-]
-[v _au8LightPatterns `uc ~T0 @X0 -> 6 `i a ]
-[e = _au8LightPatterns F15926 ]
-"115
-[; ;../user_app.c: 115:     u8 u8TempForLata = 0x0;
-[v _u8TempForLata `uc ~T0 @X0 1 a ]
-[e = _u8TempForLata -> -> 0 `i `uc ]
-"123
-[; ;../user_app.c: 123:     if(u8YesIWouldLikeToUseTheButtons)
-[e $ ! != -> _u8YesIWouldLikeToUseTheButtons `i -> 0 `i 2274  ]
-"124
-[; ;../user_app.c: 124:     {
-{
-"125
-[; ;../user_app.c: 125:         if((PORTB & 0x20) == 0x20)
-[e $ ! == & -> _PORTB `i -> 32 `i -> 32 `i 2275  ]
-"126
-[; ;../user_app.c: 126:         {
-{
-"127
-[; ;../user_app.c: 127:             u16Counter = 0x00;
-[e = F15922 -> -> 0 `i `us ]
-"128
-[; ;../user_app.c: 128:             u16PowerSwitch = 0x01;
-[e = F15924 -> -> 1 `i `us ]
-"130
-[; ;../user_app.c: 130:         }
-}
-[e :U 2275 ]
-"131
-[; ;../user_app.c: 131:         if((PORTB & 0x08) == 0x08)
-[e $ ! == & -> _PORTB `i -> 8 `i -> 8 `i 2276  ]
-"132
-[; ;../user_app.c: 132:         {
-{
-"133
-[; ;../user_app.c: 133:             u16PowerSwitch = 0x00;
-[e = F15924 -> -> 0 `i `us ]
-"134
-[; ;../user_app.c: 134:             LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"135
-[; ;../user_app.c: 135:             u16LightPatternIncrementer = 0x00;
-[e = F15923 -> -> 0 `i `us ]
-"136
-[; ;../user_app.c: 136:         }
-}
-[e :U 2276 ]
-"137
-[; ;../user_app.c: 137:         if(u16PowerSwitch == 0x01)
-[e $ ! == -> F15924 `ui -> -> 1 `i `ui 2277  ]
-"138
-[; ;../user_app.c: 138:         {
-{
-"139
-[; ;../user_app.c: 139:             u16Counter++;
-[e ++ F15922 -> -> 1 `i `us ]
-"140
-[; ;../user_app.c: 140:         }
-}
-[e :U 2277 ]
-"141
-[; ;../user_app.c: 141:     }
+"50
+[; ;../TimeXMicroSeconds.c: 50:         u16SomethingWeirdIsHappening = 0x01;
+[e = _u16SomethingWeirdIsHappening -> -> 1 `i `us ]
+"51
+[; ;../TimeXMicroSeconds.c: 51:     }
 }
 [e :U 2274 ]
-"145
-[; ;../user_app.c: 145:     if(u8YesIWouldLikeToUseTheButtons == 0x0)
-[e $ ! == -> _u8YesIWouldLikeToUseTheButtons `i -> 0 `i 2278  ]
-"146
-[; ;../user_app.c: 146:     {
-{
-"147
-[; ;../user_app.c: 147:         u16Counter++;
-[e ++ F15922 -> -> 1 `i `us ]
-"148
-[; ;../user_app.c: 148:     }
-}
-[e :U 2278 ]
-"150
-[; ;../user_app.c: 150:     if(u16Counter == 500)
-[e $ ! == -> F15922 `ui -> -> 500 `i `ui 2279  ]
-"151
-[; ;../user_app.c: 151:     {
-{
-"153
-[; ;../user_app.c: 153:        u8TempForLata = 0x0;
-[e = _u8TempForLata -> -> 0 `i `uc ]
-"154
-[; ;../user_app.c: 154:        u8TempForLata = u8TempForLata | LATA;
-[e = _u8TempForLata -> | -> _u8TempForLata `i -> _LATA `i `uc ]
-"156
-[; ;../user_app.c: 156:        u8TempForLata ^= au8LightPatterns[u16LightPatternIncrementer];
-[e =^ _u8TempForLata -> *U + &U _au8LightPatterns * -> F15923 `ux -> -> # *U &U _au8LightPatterns `ui `ux `uc ]
-"158
-[; ;../user_app.c: 158:        LATA = u8TempForLata;
-[e = _LATA _u8TempForLata ]
-"160
-[; ;../user_app.c: 160:         u16LightPatternIncrementer++;
-[e ++ F15923 -> -> 1 `i `us ]
-"162
-[; ;../user_app.c: 162:         if(u16LightPatternIncrementer >= 6)
-[e $ ! >= -> F15923 `ui -> -> 6 `i `ui 2280  ]
-"163
-[; ;../user_app.c: 163:         {
-{
-"164
-[; ;../user_app.c: 164:             u16LightPatternIncrementer = 0x00;
-[e = F15923 -> -> 0 `i `us ]
-"165
-[; ;../user_app.c: 165:         }
-}
-[e :U 2280 ]
-"167
-[; ;../user_app.c: 167:         u16Counter = 0;
-[e = F15922 -> -> 0 `i `us ]
-"168
-[; ;../user_app.c: 168:     }
-}
-[e :U 2279 ]
-"181
-[; ;../user_app.c: 181: }
-[e :UE 2273 ]
+"55
+[; ;../TimeXMicroSeconds.c: 55:     T0CON0 ^= 0b10000000;
+[e =^ _T0CON0 -> -> 128 `i `Vuc ]
+"59
+[; ;../TimeXMicroSeconds.c: 59:     return u16SomethingWeirdIsHappening;
+[e ) _u16SomethingWeirdIsHappening ]
+[e $UE 2272  ]
+"61
+[; ;../TimeXMicroSeconds.c: 61: }
+[e :UE 2272 ]
 }

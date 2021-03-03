@@ -1,4 +1,4 @@
-build/default/production/_ext/1472/user_app.p1:  \
+build/default/debug/_ext/1472/user_app.p1:  \
 ../user_app.c  \
 ../configuration.h  \
 ../typedefs.h  \

@@ -1,5 +1,5 @@
-build/default/production/_ext/1472/user_app.p1:  \
-../user_app.c  \
+build/default/debug/_ext/1472/encm369_pic18.p1:  \
+../encm369_pic18.c  \
 ../configuration.h  \
 ../typedefs.h  \
 ../main.h  \

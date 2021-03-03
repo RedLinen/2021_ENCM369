@@ -105,7 +105,7 @@ Includes
 /* Common application header files */
 #include "user_app.h"
 
-
+#include "TimeXMicroSeconds.h"
 
 /**********************************************************************************************************************
 !!!!! External device peripheral assignments

@@ -1,5 +1,5 @@
-build/default/production/_ext/1472/user_app.p1:  \
-../user_app.c  \
+build/default/debug/_ext/1472/TimeXMicroSeconds.p1:  \
+../TimeXMicroSeconds.c  \
 ../configuration.h  \
 ../typedefs.h  \
 ../main.h  \

@@ -279,9 +279,9 @@ idataCOMRAM 1FE88 1FE8D CODE 1FE88 0
 text4 1FE86 1FE87 CODE 1FE86 0
 text7 1FE84 1FE85 CODE 1FE84 0
 %locals
-dist/default/production\Pic_Activity3.X.production.o
+dist/default/debug\Pic_Activity3.X.debug.o
 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
-C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s49g.s
+C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\s3fk.s
 6753 1FEE0 0 CODE 0
 6755 1FEE0 0 CODE 0
 6758 1FEE0 0 CODE 0
