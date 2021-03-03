@@ -75,8 +75,15 @@ Promises:
 */
 void UserAppInitialize(void)
 {
-
-
+    
+    LATA = 0x00;
+    
+    //Activate clock in asynchronous mode. Use Fosc/4 as source. Set pre-scaler to 1:16 and post-scaler to 1:1
+    T0CON0 = 0b10110000;
+    T0CON1 = 0b01010100;
+    TMR0L;
+    TMR0H;
+   
 } /* end UserAppInitialize() */
 
   
@@ -94,28 +101,81 @@ Promises:
 */
 void UserAppRun(void)
 {
-    u32 u32CounterForOuterLoop = 0x00; //initialize counters
-    u32 u32CounterForInnerLoop = 0x00;
+    //Set counters
+    static u16 u16Counter = 0x00;
+    static u16 u16LightPatternIncrementer = 0x00;
+    
+    //This is just here so I can run it with buttons.
+    static u16 u16PowerSwitch = 0x00;
+    //Button enable
+    u8 u8YesIWouldLikeToUseTheButtons = 0x0;
+    
+    u8 au8LightPatterns[] = {0b00111111, 0b00001100, 0b00010010, 0b00110011, 0b000011110,0b00001100};
+    
+    u8 u8TempForLata = 0x0;
     
    
-    while(u32CounterForOuterLoop < 63)   //LATA is incremented in this "while" loop
-    {                                    //to make the attached LEDs turn on and off 
-                                             //in a binary counting pattern
-        LATA = LATA ++;                  
-        u32CounterForOuterLoop ++;                                
-            
-            
-        while(u32CounterForInnerLoop < 225000) //This inner "while" loop 
-        {                                      //just burns off time
-                    
-            u32CounterForInnerLoop ++;
-                    
-        }/*End inner 'while' loop */
+    
+    //Please ignore these "if" statements. They are just so I can 
+    //turn the LEDs of and on with the buttons.
+    //This was so useful for testing that I did mot have the heart
+    //to remove it.
+    if(u8YesIWouldLikeToUseTheButtons)
+    {
+        if((PORTB & 0x20) == 0x20)
+        {
+            u16Counter = 0x00;
+            u16PowerSwitch = 0x01;
 
-            
-        u32CounterForInnerLoop = 0x00; /*Reset the counter for the inner loop*/
-    } /*End outer 'while' loop */
-    LATA ^= 0x3F; /*LATA is effectively reset to 0x80 here.*/
+        }
+        if((PORTB & 0x08) == 0x08)
+        {
+            u16PowerSwitch = 0x00;
+            LATA = 0x00;
+            u16LightPatternIncrementer = 0x00;
+        }
+        if(u16PowerSwitch == 0x01)
+        {
+            u16Counter++;
+        }
+    }
+    
+    
+    //Counter is updated here when buttons are not being used.
+    if(u8YesIWouldLikeToUseTheButtons == 0x0)
+    {
+        u16Counter++;
+    }
+    //Update is set for one-half second
+    if(u16Counter == 500)
+    {
+        
+       u8TempForLata = 0x0;
+       u8TempForLata = u8TempForLata | LATA;
+       
+       u8TempForLata ^= au8LightPatterns[u16LightPatternIncrementer];
+       
+       LATA = u8TempForLata;
+        
+        u16LightPatternIncrementer++;
+        
+        if(u16LightPatternIncrementer >= 6)
+        {
+            u16LightPatternIncrementer = 0x00;
+        }
+        
+        u16Counter = 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+        
 
     
 } /* end UserAppRun */

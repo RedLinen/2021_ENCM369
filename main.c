@@ -52,15 +52,30 @@ void main(void)
   while(1)
   {
     /* Drivers */
-       
+    
+    
+   
+  
     /* Applications */
     UserAppRun();
    
-     
+  
     /* System sleep */
     HEARTBEAT_OFF();
+    
     SystemSleep();
+    TimeXMicroSeconds(1000); 
+    
+    while(PIR3 <= 0b01111111)
+    {
+        ;
+    }
+    
     HEARTBEAT_ON();
+    
+   
+    
+    
     
   } /* end while(1) main super loop */
   
