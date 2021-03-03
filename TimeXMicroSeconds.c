@@ -13,7 +13,7 @@
  Promises:
  -Pre-loads TMROH:L to clock out desired period
  -TMR0IF clearer
- -Timer0enabled
+ -Timer0 enabled
  -returns a value of 1 if something weird happens when clearing TMR0IF and a 0 if not.
  */
 
