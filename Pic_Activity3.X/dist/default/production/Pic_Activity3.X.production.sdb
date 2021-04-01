@@ -7,17 +7,17 @@
 [v _ClockSetup ClockSetup `(v  1 e 1 0 ]
 "89
 [v _GpioSetup GpioSetup `(v  1 e 1 0 ]
-"116
+"120
 [v _SysTickSetup SysTickSetup `(v  1 e 1 0 ]
-"138
+"142
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]
 "35 D:\Git\2021_ENCM369/main.c
 [v _main main `(v  1 e 1 0 ]
 "21 D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 [v _TimeXMicroSeconds TimeXMicroSeconds `(us  1 e 2 0 ]
-"76 D:\Git\2021_ENCM369/user_app.c
+"100 D:\Git\2021_ENCM369/user_app.c
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
-"102
+"126
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2_31\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -51,7 +51,13 @@
 [v _G_u32SystemFlags G_u32SystemFlags `VEul  1 e 4 0 ]
 "33 D:\Git\2021_ENCM369/user_app.c
 [v _G_u8UserAppFlags G_u8UserAppFlags `VEuc  1 e 1 0 ]
-"22235 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"47
+[v _UserApp_au8sinTable UserApp_au8sinTable `[256]uc  1 s 256 UserApp_au8sinTable ]
+"3158 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+[v _DAC1DATL DAC1DATL `VEuc  1 e 1 @125 ]
+"3236
+[v _DAC1CON DAC1CON `VEuc  1 e 1 @127 ]
+"22235
 [v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
 "22373
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
@@ -65,8 +71,6 @@
 [v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
 "44870
 [v _PIR3 PIR3 `VEuc  1 e 1 @1201 ]
-"45585
-[v _LATA LATA `VEuc  1 e 1 @1214 ]
 "45840
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
 "45902
@@ -76,53 +80,43 @@
 "35 D:\Git\2021_ENCM369/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"82
+"94
 } 0
-"102 D:\Git\2021_ENCM369/user_app.c
+"126 D:\Git\2021_ENCM369/user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
-"113
-[v UserAppRun@au8LightPatterns au8LightPatterns `[6]uc  1 a 6 0 ]
-"115
-[v UserAppRun@u8TempForLata u8TempForLata `uc  1 a 1 7 ]
-"105
-[v UserAppRun@u16Counter u16Counter `us  1 s 2 u16Counter ]
-"106
-[v UserAppRun@u16LightPatternIncrementer u16LightPatternIncrementer `us  1 s 2 u16LightPatternIncrementer ]
-"109
-[v UserAppRun@u16PowerSwitch u16PowerSwitch `us  1 s 2 u16PowerSwitch ]
-"111
-[v UserAppRun@F15926 F15926 `[6]uc  1 s 6 F15926 ]
-"181
+"128
+[v UserAppRun@u8ThatIndexer u8ThatIndexer `uc  1 s 1 u8ThatIndexer ]
+"140
 } 0
-"76
+"100
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
 {
-"87
+"111
 } 0
 "21 D:\Git\2021_ENCM369/TimeXMicroSeconds.c
 [v _TimeXMicroSeconds TimeXMicroSeconds `(us  1 e 2 0 ]
 {
-"33
-[v TimeXMicroSeconds@u16Time u16Time `us  1 a 2 4 ]
+"32
+[v TimeXMicroSeconds@u16Time u16Time `us  1 a 2 2 ]
 "21
 [v TimeXMicroSeconds@u16DesiredTime u16DesiredTime `us  1 p 2 0 ]
-"60
+"47
 } 0
-"138 D:\Git\2021_ENCM369/encm369_pic18.c
+"142 D:\Git\2021_ENCM369/encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]
 {
-"141
+"145
 } 0
-"116
+"120
 [v _SysTickSetup SysTickSetup `(v  1 e 1 0 ]
 {
-"121
+"125
 } 0
 "89
 [v _GpioSetup GpioSetup `(v  1 e 1 0 ]
 {
-"101
+"105
 } 0
 "70
 [v _ClockSetup ClockSetup `(v  1 e 1 0 ]

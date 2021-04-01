@@ -59,24 +59,36 @@ void main(void)
     /* Applications */
     UserAppRun();
    
-  
+    TimeXMicroSeconds(11); 
+
+        while(PIR3 <= 0b01111111)
+        {
+            ;
+        }
+    
+    
+    
+#if 1
     /* System sleep */
     HEARTBEAT_OFF();
     
     SystemSleep();
-    TimeXMicroSeconds(1000); 
-    
-    while(PIR3 <= 0b01111111)
+    if(0)
     {
-        ;
-    }
     
+        TimeXMicroSeconds(10); 
+
+        while(PIR3 <= 0b01111111)
+        {
+            ;
+        }
+    }
     HEARTBEAT_ON();
     
    
     
     
-    
+#endif
   } /* end while(1) main super loop */
   
 } /* end main() */

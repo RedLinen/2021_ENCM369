@@ -27307,7 +27307,6 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
 
     T0CON0 ^= 0b10000000;
 
-    u16 u16SomethingWeirdIsHappening= 0x00;
 
 
     u16 u16Time = 0xFFFF - u16DesiredTime;
@@ -27317,24 +27316,12 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
     TMR0L = u16Time & 0x00FF;
     TMR0H = (u16Time & 0xFF00) / 0x100;
 
-
-
-    if((PIR3 & 0b10000000) != 0)
-    {
-        PIR3 ^= 0b10000000;
-
-    }
-    else
-    {
-        u16SomethingWeirdIsHappening = 0x01;
-    }
-
-
+    PIR3 ^= 0b10000000;
 
     T0CON0 ^= 0b10000000;
 
 
 
-    return u16SomethingWeirdIsHappening;
+    return 0;
 
 }

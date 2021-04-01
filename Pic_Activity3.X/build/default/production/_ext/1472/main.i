@@ -27340,18 +27340,30 @@ void main(void)
 
     UserAppRun();
 
+    TimeXMicroSeconds(11);
+
+        while(PIR3 <= 0b01111111)
+        {
+            ;
+        }
+
+
+
 
 
                    ;
 
     SystemSleep();
-    TimeXMicroSeconds(1000);
-
-    while(PIR3 <= 0b01111111)
+    if(0)
     {
-        ;
-    }
 
+        TimeXMicroSeconds(10);
+
+        while(PIR3 <= 0b01111111)
+        {
+            ;
+        }
+    }
                   ;
 
 

@@ -2548,54 +2548,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;../TimeXMicroSeconds.c: 28:     T0CON0 ^= 0b10000000;
 [e =^ _T0CON0 -> -> 128 `i `Vuc ]
-"30
-[; ;../TimeXMicroSeconds.c: 30:     u16 u16SomethingWeirdIsHappening= 0x00;
-[v _u16SomethingWeirdIsHappening `us ~T0 @X0 1 a ]
-[e = _u16SomethingWeirdIsHappening -> -> 0 `i `us ]
-"33
-[; ;../TimeXMicroSeconds.c: 33:     u16 u16Time = 0xFFFF - u16DesiredTime;
+"32
+[; ;../TimeXMicroSeconds.c: 32:     u16 u16Time = 0xFFFF - u16DesiredTime;
 [v _u16Time `us ~T0 @X0 1 a ]
 [e = _u16Time -> - -> 65535 `ui -> _u16DesiredTime `ui `us ]
-"37
-[; ;../TimeXMicroSeconds.c: 37:     TMR0L = u16Time & 0x00FF;
+"36
+[; ;../TimeXMicroSeconds.c: 36:     TMR0L = u16Time & 0x00FF;
 [e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"38
-[; ;../TimeXMicroSeconds.c: 38:     TMR0H = (u16Time & 0xFF00) / 0x100;
+"37
+[; ;../TimeXMicroSeconds.c: 37:     TMR0H = (u16Time & 0xFF00) / 0x100;
 [e = _TMR0H -> / & -> _u16Time `ui -> 65280 `ui -> -> 256 `i `ui `uc ]
-"42
-[; ;../TimeXMicroSeconds.c: 42:     if((PIR3 & 0b10000000) != 0)
-[e $ ! != & -> _PIR3 `i -> 128 `i -> 0 `i 2273  ]
-"43
-[; ;../TimeXMicroSeconds.c: 43:     {
-{
-"44
-[; ;../TimeXMicroSeconds.c: 44:         PIR3 ^= 0b10000000;
+"39
+[; ;../TimeXMicroSeconds.c: 39:     PIR3 ^= 0b10000000;
 [e =^ _PIR3 -> -> 128 `i `Vuc ]
-"46
-[; ;../TimeXMicroSeconds.c: 46:     }
-}
-[e $U 2274  ]
-"47
-[; ;../TimeXMicroSeconds.c: 47:     else
-[e :U 2273 ]
-"48
-[; ;../TimeXMicroSeconds.c: 48:     {
-{
-"49
-[; ;../TimeXMicroSeconds.c: 49:         u16SomethingWeirdIsHappening = 0x01;
-[e = _u16SomethingWeirdIsHappening -> -> 1 `i `us ]
-"50
-[; ;../TimeXMicroSeconds.c: 50:     }
-}
-[e :U 2274 ]
-"54
-[; ;../TimeXMicroSeconds.c: 54:     T0CON0 ^= 0b10000000;
+"41
+[; ;../TimeXMicroSeconds.c: 41:     T0CON0 ^= 0b10000000;
 [e =^ _T0CON0 -> -> 128 `i `Vuc ]
-"58
-[; ;../TimeXMicroSeconds.c: 58:     return u16SomethingWeirdIsHappening;
-[e ) _u16SomethingWeirdIsHappening ]
+"45
+[; ;../TimeXMicroSeconds.c: 45:     return 0;
+[e ) -> -> 0 `i `us ]
 [e $UE 2272  ]
-"60
-[; ;../TimeXMicroSeconds.c: 60: }
+"47
+[; ;../TimeXMicroSeconds.c: 47: }
 [e :UE 2272 ]
 }

@@ -22,12 +22,11 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
 {
     
     
-    
+   
     
     //Stop the clock
     T0CON0 ^= 0b10000000;
-    //error code variable.
-    u16 u16SomethingWeirdIsHappening= 0x00;
+  
     
     //Need to subtract number we want counted to from maximum number we could count to.
     u16 u16Time = 0xFFFF - u16DesiredTime;
@@ -37,24 +36,12 @@ u16 TimeXMicroSeconds(u16 u16DesiredTime)
     TMR0L =  u16Time & 0x00FF;          
     TMR0H =  (u16Time & 0xFF00) / 0x100;      
     
+    PIR3 ^= 0b10000000;
     
-    //Make sure to not accidentally trip TMR0IF if it's low for some reason.
-    if((PIR3 & 0b10000000) != 0)
-    {
-        PIR3 ^= 0b10000000;
-        
-    }
-    else
-    {
-        u16SomethingWeirdIsHappening = 0x01; //This is an error code
-    }
-    
-    
-    //Turn on the clock
     T0CON0 ^= 0b10000000;
     
    
     
-    return u16SomethingWeirdIsHappening;
+    return 0;//u16SomethingWeirdIsHappening;
     
 }

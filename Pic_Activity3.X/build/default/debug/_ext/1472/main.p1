@@ -15,15 +15,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;../user_app.h: 28: void UserAppRun(void);
 [v _UserAppRun `(v ~T0 @X0 0 ef ]
-"64 ../encm369_pic18.h
-[; ;../encm369_pic18.h: 64: void SystemSleep(void);
-[v _SystemSleep `(v ~T0 @X0 0 ef ]
 "24 ../TimeXMicroSeconds.h
 [; ;../TimeXMicroSeconds.h: 24: u16 TimeXMicroSeconds(u16 time);
 [v _TimeXMicroSeconds `(us ~T0 @X0 0 ef1`us ]
 "44870 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 44870: extern volatile unsigned char PIR3 __attribute__((address(0x4B1)));
 [v _PIR3 `Vuc ~T0 @X0 0 e@1201 ]
+"64 ../encm369_pic18.h
+[; ;../encm369_pic18.h: 64: void SystemSleep(void);
+[v _SystemSleep `(v ~T0 @X0 0 ef ]
 "30 ../configuration.h
 [p x FEXTOSC  =  OFF     ]
 "31
@@ -2596,34 +2596,62 @@ Version 4.0 HI-TECH Software Intermediate Code
 "60
 [; ;../main.c: 60:     UserAppRun();
 [e ( _UserAppRun ..  ]
-"66
-[; ;../main.c: 66:     SystemSleep();
-[e ( _SystemSleep ..  ]
-"67
-[; ;../main.c: 67:     TimeXMicroSeconds(1000);
-[e ( _TimeXMicroSeconds (1 -> -> 1000 `i `us ]
-"69
-[; ;../main.c: 69:     while(PIR3 <= 0b01111111)
+"62
+[; ;../main.c: 62:     TimeXMicroSeconds(11);
+[e ( _TimeXMicroSeconds (1 -> -> 11 `i `us ]
+"64
+[; ;../main.c: 64:         while(PIR3 <= 0b01111111)
 [e $U 2276  ]
 [e :U 2277 ]
-"70
-[; ;../main.c: 70:     {
+"65
+[; ;../main.c: 65:         {
 {
-"72
-[; ;../main.c: 72:     }
+"67
+[; ;../main.c: 67:         }
 }
 [e :U 2276 ]
-"69
-[; ;../main.c: 69:     while(PIR3 <= 0b01111111)
+"64
+[; ;../main.c: 64:         while(PIR3 <= 0b01111111)
 [e $ <= -> _PIR3 `i -> 127 `i 2277  ]
 [e :U 2278 ]
-"80
-[; ;../main.c: 80:   }
+"75
+[; ;../main.c: 75:     SystemSleep();
+[e ( _SystemSleep ..  ]
+"76
+[; ;../main.c: 76:     if(0)
+[e $ ! != -> 0 `i -> 0 `i 2279  ]
+"77
+[; ;../main.c: 77:     {
+{
+"79
+[; ;../main.c: 79:         TimeXMicroSeconds(10);
+[e ( _TimeXMicroSeconds (1 -> -> 10 `i `us ]
+"81
+[; ;../main.c: 81:         while(PIR3 <= 0b01111111)
+[e $U 2280  ]
+[e :U 2281 ]
+"82
+[; ;../main.c: 82:         {
+{
+"84
+[; ;../main.c: 84:         }
+}
+[e :U 2280 ]
+"81
+[; ;../main.c: 81:         while(PIR3 <= 0b01111111)
+[e $ <= -> _PIR3 `i -> 127 `i 2281  ]
+[e :U 2282 ]
+"85
+[; ;../main.c: 85:     }
+}
+[e :U 2279 ]
+"92
+[; ;../main.c: 92:   }
 }
 [e :U 2273 ]
 [e $U 2274  ]
 [e :U 2275 ]
-"82
-[; ;../main.c: 82: }
+"94
+[; ;../main.c: 94: }
 [e :UE 2272 ]
 }

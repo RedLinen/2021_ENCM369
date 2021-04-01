@@ -88,14 +88,18 @@ Promises:
 */
 void GpioSetup(void)
 {
-   TRISB = 0x28;
-   ANSELB = 0x00;
-   PORTB = 0x00;
-    
+   
     
   TRISA = 0x00;
   ANSELA = 0x00;
-  LATA = 0x00;
+  
+  TRISB = 0b0000001;
+  ANSELB = 0x00;
+  PORTB = 0x00;
+  
+  
+  // Turn on DAC, set output to RA2, use VDD as positive reference, use VSS as negative reference.
+  DAC1CON = 0b10100000;
 
   
 } /* end GpioSetup() */
