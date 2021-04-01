@@ -279,7 +279,7 @@ text7 1FDFA 1FDFB CODE 1FDFA 0
 %locals
 dist/default/debug\Pic_Activity3.X.debug.o
 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
-C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sc94.s
+C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\slcc.s
 7003 1FE88 0 CODE 0
 7005 1FE88 0 CODE 0
 7008 1FE88 0 CODE 0
