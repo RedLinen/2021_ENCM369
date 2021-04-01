@@ -27354,16 +27354,6 @@ void main(void)
                    ;
 
     SystemSleep();
-    if(0)
-    {
-
-        TimeXMicroSeconds(10);
-
-        while(PIR3 <= 0b01111111)
-        {
-            ;
-        }
-    }
                   ;
 
 

@@ -52,7 +52,7 @@
 "33 D:\Git\2021_ENCM369/user_app.c
 [v _G_u8UserAppFlags G_u8UserAppFlags `VEuc  1 e 1 0 ]
 "47
-[v _UserApp_au8sinTable UserApp_au8sinTable `[256]uc  1 s 256 UserApp_au8sinTable ]
+[v _UserApp_au8SinTable UserApp_au8SinTable `[256]uc  1 s 256 UserApp_au8SinTable ]
 "3158 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
 [v _DAC1DATL DAC1DATL `VEuc  1 e 1 @125 ]
 "3236
@@ -80,7 +80,7 @@
 "35 D:\Git\2021_ENCM369/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"94
+"84
 } 0
 "126 D:\Git\2021_ENCM369/user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]

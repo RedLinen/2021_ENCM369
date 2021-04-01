@@ -44,7 +44,7 @@ extern volatile u32 G_u32SystemFlags;                     /*!< @brief From main.
 Global variable definitions with scope limited to this local application.
 Variable names shall start with "UserApp_<type>" and be declared as static.
 ***********************************************************************************************************************/
-static u8 UserApp_au8sinTable [] =
+static u8 UserApp_au8SinTable [] =
 {
 0x80,0x83,0x86,0x89,0x8c,0x8f,0x92,0x95,0x98,0x9b,0x9e,0xa2,0xa5,0xa7,0xaa,0xad,
 0xb0,0xb3,0xb6,0xb9,0xbc,0xbe,0xc1,0xc4,0xc6,0xc9,0xcb,0xce,0xd0,0xd3,0xd5,0xd7,
@@ -130,7 +130,7 @@ void UserAppRun(void)
     
   
     //Pass desired trig value into the DAC
-    DAC1DATL = UserApp_au8sinTable[u8ThatIndexer];
+    DAC1DATL = UserApp_au8SinTable[u8ThatIndexer];
     
     //This counter will roll over on its own so all we need to do
     //to keep cycling through the array is just keep adding to it.
