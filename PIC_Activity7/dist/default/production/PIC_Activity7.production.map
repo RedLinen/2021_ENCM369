@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2_31\pic\dat\en_msgs.txt \
   -pivt0x8=08h -cn -h+dist/default/production\PIC_Activity7.production.sym \
   --cmf=dist/default/production\PIC_Activity7.production.cmf -z -Q18F27Q43 \
-  -oC:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sfvs.2 \
+  -oC:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sddk.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/PIC_Activity7.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0800h-025FFh -pstack=STACK \
@@ -32,7 +32,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sfvs.o \
+  C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sddk.o \
   dist/default/production\PIC_Activity7.production.o 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 18F27Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sfvs.o
+C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sddk.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                                102      102        4        4       0
@@ -51,28 +51,28 @@ dist/default/production\PIC_Activity7.production.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 ivt0x8                                8        8       FA        4       0
-                text12                              49C      49C       12       E2       0
-                text11                              388      388       3A       E2       0
-                text10                              4B8      4B8        4      12E       0
-                text9                               470      470       1A       E2       0
-                text8                               4BE      4BE        2      12E       0
-                text7                               44E      44E       22       E2       0
-                text6                               4AE      4AE        8       E2       0
-                text5                               3C2      3C2       34       E2       0
-                text4                               48A      48A       12       E2       0
-                text3                               332      332       54        4       0
-                text2                               422      422       2C       E2       0
-                text1                               4BC      4BC        2      12E       0
-                text0                               3F6      3F6       2C       E2       0
-                cstackCOMRAM                        518      518        7      501       1
+                text12                              684      684       12      160       0
+                text11                              580      580       3A      160       0
+                text10                              6A0      6A0        4      1A8       0
+                text9                               658      658       1A      160       0
+                text8                               6A4      6A4        2      1A8       0
+                text7                               61A      61A       22      160       0
+                text6                               696      696        8      160       0
+                text5                               5BA      5BA       34      160       0
+                text4                               672      672       12      160       0
+                text3                               63C      63C       1C      160       0
+                text2                               52A      52A       54        4       0
+                text1                               106      106      1F8        4       0
+                text0                               5EE      5EE       2C      160       0
+                cstackCOMRAM                        518      518        D      501       1
                 dataBANK7                           700      700      100      700       1
                 dataBANK6                           600      600       54      600       1
                 dataBANK5                           560      560       54      560       1
                 bssCOMRAM                           501      501       17      501       1
-                cinit                               206      206       84        4       0
-                idataBANK7                          106      106      100        4       0
-                idataBANK6                          2DE      2DE       54        4       0
-                idataBANK5                          28A      28A       54        4       0
+                cinit                               3FE      3FE       84        4       0
+                idataBANK7                          2FE      2FE      100        4       0
+                idataBANK6                          4D6      4D6       54        4       0
+                idataBANK5                          482      482       54        4       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -81,23 +81,23 @@ TOTAL           Name                               Link     Load   Length     Sp
                 init                                102      102        4         0
                 reset_vec                             0        0        4         0
                 ivt0x8                                8        8       FA         0
-                text12                              49C      49C       12         0
-                text11                              388      388       3A         0
-                text10                              4B8      4B8        4         0
-                text9                               470      470       1A         0
-                text8                               4BE      4BE        2         0
-                text7                               44E      44E       22         0
-                text6                               4AE      4AE        8         0
-                text5                               3C2      3C2       34         0
-                text4                               48A      48A       12         0
-                text3                               332      332       54         0
-                text2                               422      422       2C         0
-                text1                               4BC      4BC        2         0
-                text0                               3F6      3F6       2C         0
-                cinit                               206      206       84         0
-                idataBANK7                          106      106      100         0
-                idataBANK6                          2DE      2DE       54         0
-                idataBANK5                          28A      28A       54         0
+                text12                              684      684       12         0
+                text11                              580      580       3A         0
+                text10                              6A0      6A0        4         0
+                text9                               658      658       1A         0
+                text8                               6A4      6A4        2         0
+                text7                               61A      61A       22         0
+                text6                               696      696        8         0
+                text5                               5BA      5BA       34         0
+                text4                               672      672       12         0
+                text3                               63C      63C       1C         0
+                text2                               52A      52A       54         0
+                text1                               106      106      1F8         0
+                text0                               5EE      5EE       2C         0
+                cinit                               3FE      3FE       84         0
+                idataBANK7                          2FE      2FE      100         0
+                idataBANK6                          4D6      4D6       54         0
+                idataBANK5                          482      482       54         0
 
         CLASS   CONST          
 
@@ -106,7 +106,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                cstackCOMRAM                        518      518        7         1
+                cstackCOMRAM                        518      518        D         1
                 bssCOMRAM                           501      501       17         1
 
         CLASS   ABS1           
@@ -201,12 +201,12 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                ivt0x8                         000008  00037E  000386         4       0  CODE    
-                text11                         000388  00012E  0004B6        E2       0  CODE    
-                text10                         0004B8  000008  0004C0       12E       0  CODE    
-                bssCOMRAM                      000501  00001E  00051F       501       1  COMRAM  
+                ivt0x8                         000008  000576  00057E         4       0  CODE    
+                bssCOMRAM                      000501  000024  000525       501       1  COMRAM  
                 dataBANK5                      000560  000054  0005B4       560       1  BANK5   
+                text11                         000580  00011E  00069E       160       0  CODE    
                 dataBANK6                      000600  000054  000654       600       1  BANK6   
+                text10                         0006A0  000006  0006A6       1A8       0  CODE    
                 dataBANK7                      000700  000100  000800       700       1  BANK7   
 
 
@@ -245,20 +245,20 @@ UNUSED ADDRESS RANGES
         BANK6            000654-0006FF               AC
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           00051F-00055F               41
+        BIGRAM           000525-00055F               3B
                          0005B4-0005FF               4C
                          000654-0006FF               AC
                          000800-0025FF             1E00
         CODE             000004-000007                4
-                         000386-000387                2
-                         0004B6-0004B7                2
-                         0004C0-01FFFF            1FB40
-        COMRAM           00051F-00055F               41
+                         00057E-00057F                2
+                         00069E-00069F                2
+                         0006A6-01FFFF            1F95A
+        COMRAM           000525-00055F               3B
         CONFIG           30000A-300011                8
         CONST            000004-000007                4
-                         000386-000387                2
-                         0004B6-0004B7                2
-                         0004C0-01FFFF            1FB40
+                         00057E-00057F                2
+                         00069E-00069F                2
+                         0006A6-01FFFF            1F95A
         EEDATA           380000-3803FF              400
         MEDIUMCONST      002600-00FFFF             DA00
                          012600-01FFFF             DA00
@@ -283,12 +283,13 @@ UserAppRun@au16MyNotes          dataBANK6    000600
 UserAppRun@au16MyTime           dataBANK5    000560
 UserAppRun@u16ThatIndexer       bssCOMRAM    000511
 UserAppRun@u32MSeconds          bssCOMRAM    000505
+UserAppRun@u8Slur               cstackCOMRAM 000524
 _ANSELA                         (abs)        000400
 _ANSELC                         (abs)        000410
-_ClockSetup                     text8        0004BE
+_ClockSetup                     text8        0006A4
 _DAC1CON                        (abs)        00007F
 _DAC1DATL                       (abs)        00007D
-_DEFAULT_ISR                    text9        000470
+_DEFAULT_ISR                    text9        000658
 _G_au8UserAppsinTable           dataBANK7    000700
 _G_u32SystemTime1ms             bssCOMRAM    00050D
 _G_u32SystemTime1s              bssCOMRAM    000509
@@ -296,18 +297,18 @@ _G_u8SystemFlags                bssCOMRAM    000517
 _G_u8UserAppFlags               bssCOMRAM    000516
 _G_u8UserAppTimePeriodHi        bssCOMRAM    000515
 _G_u8UserAppTimePeriodLo        bssCOMRAM    000514
-_GpioSetup                      text7        00044E
+_GpioSetup                      text7        00061A
 _INTCON0bits                    (abs)        0004D6
-_InterruptSetup                 text6        0004AE
-_InterruptTimerXus              text3        000332
+_InterruptSetup                 text6        000696
+_InterruptTimerXus              text2        00052A
 _LATA                           (abs)        0004BE
 _LATC                           (abs)        0004C0
 _PIE3bits                       (abs)        0004A1
 _PIR0bits                       (abs)        0004AE
 _PIR3bits                       (abs)        0004B1
-_SW_ISR                         text10       0004B8
-_SysTickSetup                   text5        0003C2
-_SystemSleep                    text4        00048A
+_SW_ISR                         text10       0006A0
+_SysTickSetup                   text5        0005BA
+_SystemSleep                    text4        000672
 _T0CON0                         (abs)        00031A
 _T0CON0bits                     (abs)        00031A
 _T0CON1                         (abs)        00031B
@@ -322,12 +323,12 @@ _TMR0H                          (abs)        000319
 _TMR0L                          (abs)        000318
 _TMR1H                          (abs)        00031D
 _TMR1L                          (abs)        00031C
-_TMR1_ISR                       text11       000388
-_TMR2_ISR                       text12       00049C
+_TMR1_ISR                       text11       000580
+_TMR2_ISR                       text12       000684
 _TRISA                          (abs)        0004C6
 _TRISC                          (abs)        0004C8
-_UserAppInitialize              text2        000422
-_UserAppRun                     text1        0004BC
+_UserAppInitialize              text3        00063C
+_UserAppRun                     text1        000106
 __HRAM                          (abs)        000000
 __Habs1                         abs1         000000
 __Hbank10                       bank10       000000
@@ -528,7 +529,7 @@ __Ltext6                        text6        000000
 __Ltext7                        text7        000000
 __Ltext8                        text8        000000
 __Ltext9                        text9        000000
-__S0                            (abs)        0004C0
+__S0                            (abs)        0006A6
 __S1                            (abs)        000800
 __S2                            (abs)        000000
 __S4                            (abs)        000000
@@ -540,45 +541,45 @@ ___rparam_used                  (abs)        000001
 ___sp                           stack        000000
 __accesstop                     (abs)        000560
 __activetblptr                  (abs)        000000
-__end_of_ClockSetup             text8        0004C0
-__end_of_DEFAULT_ISR            text9        00048A
-__end_of_GpioSetup              text7        000470
-__end_of_InterruptSetup         text6        0004B6
-__end_of_InterruptTimerXus      text3        000386
-__end_of_SW_ISR                 text10       0004BC
-__end_of_SysTickSetup           text5        0003F6
-__end_of_SystemSleep            text4        00049C
-__end_of_TMR1_ISR               text11       0003C2
-__end_of_TMR2_ISR               text12       0004AE
-__end_of_UserAppInitialize      text2        00044E
-__end_of_UserAppRun             text1        0004BE
-__end_of__initialization        cinit        000284
-__end_of_main                   text0        000422
-__initialization                cinit        000206
+__end_of_ClockSetup             text8        0006A6
+__end_of_DEFAULT_ISR            text9        000672
+__end_of_GpioSetup              text7        00063C
+__end_of_InterruptSetup         text6        00069E
+__end_of_InterruptTimerXus      text2        00057E
+__end_of_SW_ISR                 text10       0006A4
+__end_of_SysTickSetup           text5        0005EE
+__end_of_SystemSleep            text4        000684
+__end_of_TMR1_ISR               text11       0005BA
+__end_of_TMR2_ISR               text12       000696
+__end_of_UserAppInitialize      text3        000658
+__end_of_UserAppRun             text1        0002FE
+__end_of__initialization        cinit        00047C
+__end_of_main                   text0        00061A
+__initialization                cinit        0003FE
 __mediumconst                   mediumconst  000000
 __pbssCOMRAM                    bssCOMRAM    000501
-__pcinit                        cinit        000206
+__pcinit                        cinit        0003FE
 __pcstackCOMRAM                 cstackCOMRAM 000518
 __pdataBANK5                    dataBANK5    000560
 __pdataBANK6                    dataBANK6    000600
 __pdataBANK7                    dataBANK7    000700
-__pidataBANK5                   idataBANK5   00028A
-__pidataBANK6                   idataBANK6   0002DE
-__pidataBANK7                   idataBANK7   000106
+__pidataBANK5                   idataBANK5   000482
+__pidataBANK6                   idataBANK6   0004D6
+__pidataBANK7                   idataBANK7   0002FE
 __pivt0x8                       ivt0x8       000008
-__ptext0                        text0        0003F6
-__ptext1                        text1        0004BC
-__ptext10                       text10       0004B8
-__ptext11                       text11       000388
-__ptext12                       text12       00049C
-__ptext2                        text2        000422
-__ptext3                        text3        000332
-__ptext4                        text4        00048A
-__ptext5                        text5        0003C2
-__ptext6                        text6        0004AE
-__ptext7                        text7        00044E
-__ptext8                        text8        0004BE
-__ptext9                        text9        000470
+__ptext0                        text0        0005EE
+__ptext1                        text1        000106
+__ptext10                       text10       0006A0
+__ptext11                       text11       000580
+__ptext12                       text12       000684
+__ptext2                        text2        00052A
+__ptext3                        text3        00063C
+__ptext4                        text4        000672
+__ptext5                        text5        0005BA
+__ptext6                        text6        000696
+__ptext7                        text7        00061A
+__ptext8                        text8        0006A4
+__ptext9                        text9        000658
 __ramtop                        ramtop       002600
 __size_of_ClockSetup            (abs)        000000
 __size_of_DEFAULT_ISR           (abs)        000000
@@ -594,8 +595,8 @@ __size_of_UserAppInitialize     (abs)        000000
 __size_of_UserAppRun            (abs)        000000
 __size_of_main                  (abs)        000000
 __smallconst                    smallconst   000000
-_main                           text0        0003F6
-end_of_initialization           cinit        000284
+_main                           text0        0005EE
+end_of_initialization           cinit        00047C
 intlevel0                       text         000000
 intlevel1                       text         000000
 intlevel2                       text         000000
@@ -605,7 +606,7 @@ ivt0x8_undefint                 ivt0x8       000100
 stackhi                         (abs)        0025FF
 stacklo                         (abs)        000800
 start                           init         000102
-start_initialization            cinit        000206
+start_initialization            cinit        0003FE
 
 
 FUNCTION INFORMATION:
@@ -620,7 +621,7 @@ FUNCTION INFORMATION:
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -651,11 +652,11 @@ Total ram usage:        0 bytes
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  u8Slur          1    0        unsigned char 
+  u8Slur          1   12[COMRAM] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -663,39 +664,9 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        1 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    3
- This function calls:
-		_InterruptTimerXus
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _UserAppInitialize *****************
- Defined at:
-		line 204 in file "user_app.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-                  1    wreg      void 
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
+      Temps:          6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    3
  This function calls:
@@ -732,8 +703,37 @@ Total ram usage:        5 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_UserAppInitialize
 		_UserAppRun
+ This function uses a non-reentrant model
+
+
+ *************** function _UserAppInitialize *****************
+ Defined at:
+		line 204 in file "user_app.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
  This function uses a non-reentrant model
 
 
@@ -1009,36 +1009,36 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 encm369_pic18.c
-		_GpioSetup     		CODE           	044E	0000	34
-		_SystemSleep   		CODE           	048A	0000	18
-		_SysTickSetup  		CODE           	03C2	0000	52
-		_ClockSetup    		CODE           	04BE	0000	2
+		_GpioSetup     		CODE           	061A	0000	34
+		_SystemSleep   		CODE           	0672	0000	18
+		_SysTickSetup  		CODE           	05BA	0000	52
+		_ClockSetup    		CODE           	06A4	0000	2
 
 encm369_pic18.c estimated size: 106
 
 interrupts.c
-		_TMR2_ISR      		CODE           	049C	0000	18
-		_DEFAULT_ISR   		CODE           	0470	0000	26
-		_InterruptSetup		CODE           	04AE	0000	8
-		_SW_ISR        		CODE           	04B8	0000	4
-		_TMR1_ISR      		CODE           	0388	0000	58
+		_TMR2_ISR      		CODE           	0684	0000	18
+		_DEFAULT_ISR   		CODE           	0658	0000	26
+		_InterruptSetup		CODE           	0696	0000	8
+		_SW_ISR        		CODE           	06A0	0000	4
+		_TMR1_ISR      		CODE           	0580	0000	58
 
 interrupts.c estimated size: 114
 
 shared
-		__initialization		CODE           	0206	0000	126
+		__initialization		CODE           	03FE	0000	126
 
 shared estimated size: 126
 
 main.c
-		_main          		CODE           	03F6	0000	44
+		_main          		CODE           	05EE	0000	44
 
 main.c estimated size: 44
 
 user_app.c
-		_UserAppRun    		CODE           	04BC	0000	2
-		_InterruptTimerXus		CODE           	0332	0000	84
-		_UserAppInitialize		CODE           	0422	0000	44
+		_UserAppRun    		CODE           	0106	0000	504
+		_InterruptTimerXus		CODE           	052A	0000	84
+		_UserAppInitialize		CODE           	063C	0000	28
 
-user_app.c estimated size: 130
+user_app.c estimated size: 616
 

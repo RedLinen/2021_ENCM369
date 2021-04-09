@@ -27460,7 +27460,7 @@ void UserAppInitialize(void)
     T1CON = 0x31;
 
 
- InterruptTimerXus(15,1);
+
 
 }
 # 238 "user_app.c"
@@ -27481,8 +27481,8 @@ void UserAppRun(void)
 
 
 
-    if(0)
-    {
+
+
 
     if((u16ThatIndexer == 7) || (u16ThatIndexer == 13) || (u16ThatIndexer == 14))
     {
@@ -27516,7 +27516,7 @@ void UserAppRun(void)
 
     u32MSeconds += 1;
 
-    }
+
 
 
 

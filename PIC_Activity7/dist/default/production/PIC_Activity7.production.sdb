@@ -218,6 +218,8 @@
 "238 D:\Git\2021_ENCM369\PIC_Activity7\user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
+"251
+[v UserAppRun@u8Slur u8Slur `uc  1 a 1 12 ]
 "241
 [v UserAppRun@au16MyTime au16MyTime `[42]us  1 s 84 au16MyTime ]
 "245
@@ -228,11 +230,6 @@
 [v UserAppRun@u16ThatIndexer u16ThatIndexer `us  1 s 2 u16ThatIndexer ]
 "295
 } 0
-"204
-[v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
-{
-"223
-} 0
 "147
 [v _InterruptTimerXus InterruptTimerXus `(v  1 e 1 0 ]
 {
@@ -242,6 +239,11 @@
 [v InterruptTimerXus@u16TimeXus_ u16TimeXus_ `us  1 p 2 1 ]
 [v InterruptTimerXus@bContinuous_ bContinuous_ `a  1 p 1 3 ]
 "182
+} 0
+"204
+[v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
+{
+"223
 } 0
 "154 D:\Git\2021_ENCM369\PIC_Activity7\encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]

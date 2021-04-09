@@ -3031,9 +3031,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "218
 [; ;user_app.c: 218:     T1CON = 0x31;
 [e = _T1CON -> -> 49 `i `uc ]
-"221
-[; ;user_app.c: 221:  InterruptTimerXus(15,1);
-[e ( _InterruptTimerXus (2 , -> -> 15 `i `us -> -> 1 `i `a ]
 "223
 [; ;user_app.c: 223: }
 [e :UE 2276 ]
@@ -3160,15 +3157,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;user_app.c: 251:     u8 u8Slur = 0;
 [v _u8Slur `uc ~T0 @X0 1 a ]
 [e = _u8Slur -> -> 0 `i `uc ]
-"255
-[; ;user_app.c: 255:     if(0)
-[e $ ! != -> 0 `i -> 0 `i 2278  ]
-"256
-[; ;user_app.c: 256:     {
-{
 "258
 [; ;user_app.c: 258:     if((u16ThatIndexer == 7) || (u16ThatIndexer == 13) || (u16ThatIndexer == 14))
-[e $ ! || || == -> F15952 `ui -> -> 7 `i `ui == -> F15952 `ui -> -> 13 `i `ui == -> F15952 `ui -> -> 14 `i `ui 2279  ]
+[e $ ! || || == -> F15952 `ui -> -> 7 `i `ui == -> F15952 `ui -> -> 13 `i `ui == -> F15952 `ui -> -> 14 `i `ui 2278  ]
 "259
 [; ;user_app.c: 259:     {
 {
@@ -3178,10 +3169,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "261
 [; ;user_app.c: 261:     }
 }
-[e :U 2279 ]
+[e :U 2278 ]
 "262
 [; ;user_app.c: 262:     if((u16ThatIndexer == 23) || (u16ThatIndexer == 33) || (u16ThatIndexer == 34))
-[e $ ! || || == -> F15952 `ui -> -> 23 `i `ui == -> F15952 `ui -> -> 33 `i `ui == -> F15952 `ui -> -> 34 `i `ui 2280  ]
+[e $ ! || || == -> F15952 `ui -> -> 23 `i `ui == -> F15952 `ui -> -> 33 `i `ui == -> F15952 `ui -> -> 34 `i `ui 2279  ]
 "263
 [; ;user_app.c: 263:     {
 {
@@ -3191,10 +3182,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "265
 [; ;user_app.c: 265:     }
 }
-[e :U 2280 ]
+[e :U 2279 ]
 "270
 [; ;user_app.c: 270:     if((u32MSeconds <= (au16MyTime[u16ThatIndexer] - (u16)(50))) || (u8Slur == 1))
-[e $ ! || <= F15951 -> - -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ui -> -> -> 50 `i `us `ui `ul == -> _u8Slur `i -> 1 `i 2281  ]
+[e $ ! || <= F15951 -> - -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ui -> -> -> 50 `i `us `ui `ul == -> _u8Slur `i -> 1 `i 2280  ]
 "271
 [; ;user_app.c: 271:     {
 {
@@ -3204,10 +3195,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "273
 [; ;user_app.c: 273:     }
 }
-[e :U 2281 ]
+[e :U 2280 ]
 "274
 [; ;user_app.c: 274:     if((u32MSeconds >= (au16MyTime[u16ThatIndexer] - (u16)(50))) && (u8Slur != 1))
-[e $ ! && >= F15951 -> - -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ui -> -> -> 50 `i `us `ui `ul != -> _u8Slur `i -> 1 `i 2282  ]
+[e $ ! && >= F15951 -> - -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ui -> -> -> 50 `i `us `ui `ul != -> _u8Slur `i -> 1 `i 2281  ]
 "275
 [; ;user_app.c: 275:     {
 {
@@ -3217,10 +3208,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "277
 [; ;user_app.c: 277:     }
 }
-[e :U 2282 ]
+[e :U 2281 ]
 "278
 [; ;user_app.c: 278:     if(u32MSeconds >= (au16MyTime[u16ThatIndexer]))
-[e $ ! >= F15951 -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ul 2283  ]
+[e $ ! >= F15951 -> *U + &U F15949 * -> F15952 `ux -> -> # *U &U F15949 `ui `ux `ul 2282  ]
 "279
 [; ;user_app.c: 279:     {
 {
@@ -3233,10 +3224,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "282
 [; ;user_app.c: 282:     }
 }
-[e :U 2283 ]
+[e :U 2282 ]
 "283
 [; ;user_app.c: 283:     if(u16ThatIndexer == 42)
-[e $ ! == -> F15952 `ui -> -> 42 `i `ui 2284  ]
+[e $ ! == -> F15952 `ui -> -> 42 `i `ui 2283  ]
 "284
 [; ;user_app.c: 284:     {
 {
@@ -3246,14 +3237,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "286
 [; ;user_app.c: 286:     }
 }
-[e :U 2284 ]
+[e :U 2283 ]
 "288
 [; ;user_app.c: 288:     u32MSeconds += 1;
 [e =+ F15951 -> -> -> 1 `i `l `ul ]
-"290
-[; ;user_app.c: 290:     }
-}
-[e :U 2278 ]
 "295
 [; ;user_app.c: 295: }
 [e :UE 2277 ]
