@@ -37,7 +37,7 @@ dataBANK6 BANK6 1 600 600 54 1
 dataBANK7 BANK7 1 700 700 100 1
 bssCOMRAM COMRAM 1 501 501 17 1
 config CONFIG 4 300000 300000 A 1
-$C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+$C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 102 102 4 1
 reset_vec CODE 0 0 0 4 1
@@ -225,69 +225,69 @@ $dist/default/debug\PIC_Activity7.debug.o
 60A text0 CODE >62:D:\Git\2021_ENCM369\PIC_Activity7\main.c
 60C text0 CODE >63:D:\Git\2021_ENCM369\PIC_Activity7\main.c
 610 text0 CODE >64:D:\Git\2021_ENCM369\PIC_Activity7\main.c
-3FE cinit CODE >7143:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-3FE cinit CODE >7145:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-3FE cinit CODE >7148:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-3FE cinit CODE >7206:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-400 cinit CODE >7207:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-402 cinit CODE >7208:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-404 cinit CODE >7209:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-406 cinit CODE >7210:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-408 cinit CODE >7211:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-40A cinit CODE >7212:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-40E cinit CODE >7213:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-412 cinit CODE >7214:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-412 cinit CODE >7215:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-414 cinit CODE >7216:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-418 cinit CODE >7217:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-41A cinit CODE >7218:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-41C cinit CODE >7219:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-41E cinit CODE >7220:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-420 cinit CODE >7221:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-422 cinit CODE >7225:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-424 cinit CODE >7226:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-426 cinit CODE >7227:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-428 cinit CODE >7228:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-42A cinit CODE >7229:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-42C cinit CODE >7230:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-42E cinit CODE >7231:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-432 cinit CODE >7232:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-436 cinit CODE >7233:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-436 cinit CODE >7234:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-438 cinit CODE >7235:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-43C cinit CODE >7236:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-43E cinit CODE >7237:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-440 cinit CODE >7238:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-442 cinit CODE >7242:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-444 cinit CODE >7243:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-446 cinit CODE >7244:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-448 cinit CODE >7245:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-44A cinit CODE >7246:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-44C cinit CODE >7247:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-44E cinit CODE >7248:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-452 cinit CODE >7249:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-456 cinit CODE >7250:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-456 cinit CODE >7251:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-458 cinit CODE >7252:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-45C cinit CODE >7253:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-45E cinit CODE >7254:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-460 cinit CODE >7255:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-462 cinit CODE >7259:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-466 cinit CODE >7260:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-468 cinit CODE >7261:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-468 cinit CODE >7262:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-46A cinit CODE >7263:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-46C cinit CODE >7264:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-46E cinit CODE >7272:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-470 cinit CODE >7273:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-472 cinit CODE >7274:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-474 cinit CODE >7275:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-476 cinit CODE >7276:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-478 cinit CODE >7277:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-47A cinit CODE >7278:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-47C cinit CODE >7284:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-47C cinit CODE >7286:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
-47E cinit CODE >7287:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.s
+3FE cinit CODE >7143:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+3FE cinit CODE >7145:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+3FE cinit CODE >7148:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+3FE cinit CODE >7206:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+400 cinit CODE >7207:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+402 cinit CODE >7208:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+404 cinit CODE >7209:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+406 cinit CODE >7210:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+408 cinit CODE >7211:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+40A cinit CODE >7212:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+40E cinit CODE >7213:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+412 cinit CODE >7214:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+412 cinit CODE >7215:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+414 cinit CODE >7216:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+418 cinit CODE >7217:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+41A cinit CODE >7218:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+41C cinit CODE >7219:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+41E cinit CODE >7220:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+420 cinit CODE >7221:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+422 cinit CODE >7225:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+424 cinit CODE >7226:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+426 cinit CODE >7227:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+428 cinit CODE >7228:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+42A cinit CODE >7229:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+42C cinit CODE >7230:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+42E cinit CODE >7231:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+432 cinit CODE >7232:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+436 cinit CODE >7233:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+436 cinit CODE >7234:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+438 cinit CODE >7235:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+43C cinit CODE >7236:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+43E cinit CODE >7237:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+440 cinit CODE >7238:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+442 cinit CODE >7242:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+444 cinit CODE >7243:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+446 cinit CODE >7244:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+448 cinit CODE >7245:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+44A cinit CODE >7246:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+44C cinit CODE >7247:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+44E cinit CODE >7248:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+452 cinit CODE >7249:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+456 cinit CODE >7250:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+456 cinit CODE >7251:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+458 cinit CODE >7252:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+45C cinit CODE >7253:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+45E cinit CODE >7254:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+460 cinit CODE >7255:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+462 cinit CODE >7259:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+466 cinit CODE >7260:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+468 cinit CODE >7261:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+468 cinit CODE >7262:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+46A cinit CODE >7263:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+46C cinit CODE >7264:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+46E cinit CODE >7272:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+470 cinit CODE >7273:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+472 cinit CODE >7274:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+474 cinit CODE >7275:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+476 cinit CODE >7276:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+478 cinit CODE >7277:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+47A cinit CODE >7278:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+47C cinit CODE >7284:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+47C cinit CODE >7286:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
+47E cinit CODE >7287:C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -312,16 +312,16 @@ __HidataBANK5 0 0 ABS 0 idataBANK5 dist/default/debug\PIC_Activity7.debug.o
 __HidataBANK6 0 0 ABS 0 idataBANK6 dist/default/debug\PIC_Activity7.debug.o
 __HidataBANK7 0 0 ABS 0 idataBANK7 dist/default/debug\PIC_Activity7.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\PIC_Activity7.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\PIC_Activity7.debug.o
 _T1CONbits 31E 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\PIC_Activity7.debug.o
 _LATA 4BE 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 _LATC 4C0 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 _T2PR 323 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
-___sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+___sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 _main 5EE 0 CODE 0 text0 dist/default/debug\PIC_Activity7.debug.o
-start 102 0 CODE 0 init C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+start 102 0 CODE 0 init C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 __size_of_main 0 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\PIC_Activity7.debug.o
 _DAC1DATL 7D 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
@@ -332,11 +332,11 @@ __LidataBANK7 0 0 ABS 0 idataBANK7 dist/default/debug\PIC_Activity7.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug\PIC_Activity7.debug.o
 __end_of_SW_ISR 6A4 0 CODE 0 text10 dist/default/debug\PIC_Activity7.debug.o
 InterruptTimerXus@u16TimeXus_ 519 0 COMRAM 1 cstackCOMRAM dist/default/debug\PIC_Activity7.debug.o
-__accesstop 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-intlevel0 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-intlevel1 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-intlevel2 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-intlevel3 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+__accesstop 560 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+intlevel0 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+intlevel1 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+intlevel2 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+intlevel3 0 0 CODE 0 text C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\PIC_Activity7.debug.o
 _DEFAULT_ISR 658 0 CODE 0 text9 dist/default/debug\PIC_Activity7.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\PIC_Activity7.debug.o
@@ -347,8 +347,8 @@ _UserAppRun 106 0 CODE 0 text1 dist/default/debug\PIC_Activity7.debug.o
 _ANSELA 400 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 _ANSELC 410 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 _G_u32SystemTime1s 509 0 COMRAM 1 bssCOMRAM dist/default/debug\PIC_Activity7.debug.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 _DAC1CON 7F 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\PIC_Activity7.debug.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\PIC_Activity7.debug.o
@@ -420,7 +420,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/debug\PIC_Activity7.debug.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/debug\PIC_Activity7.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\PIC_Activity7.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug\PIC_Activity7.debug.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 _SystemSleep 672 0 CODE 0 text4 dist/default/debug\PIC_Activity7.debug.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug\PIC_Activity7.debug.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/debug\PIC_Activity7.debug.o
@@ -546,8 +546,8 @@ __end_of_SysTickSetup 5EE 0 CODE 0 text5 dist/default/debug\PIC_Activity7.debug.
 _UserAppInitialize 63C 0 CODE 0 text3 dist/default/debug\PIC_Activity7.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\PIC_Activity7.debug.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug\PIC_Activity7.debug.o
-stackhi 25FF 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
-stacklo 800 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+stackhi 25FF 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
+stacklo 800 0 ABS 0 - C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 __Lirdata 0 0 CODE 0 irdata dist/default/debug\PIC_Activity7.debug.o
 __Livt0x8 8 0 CODE 0 ivt0x8 dist/default/debug\PIC_Activity7.debug.o
 __Lspace_0 0 0 ABS 0 - dist/default/debug\PIC_Activity7.debug.o
@@ -582,7 +582,7 @@ _G_u8UserAppTimePeriodLo 514 0 COMRAM 1 bssCOMRAM dist/default/debug\PIC_Activit
 __Ltext10 0 0 ABS 0 text10 dist/default/debug\PIC_Activity7.debug.o
 __Ltext11 0 0 ABS 0 text11 dist/default/debug\PIC_Activity7.debug.o
 __Ltext12 0 0 ABS 0 text12 dist/default/debug\PIC_Activity7.debug.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sg88.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\JOSHUA~1.BEA\AppData\Local\Temp\sgoc.o
 UserAppRun@u16ThatIndexer 511 0 COMRAM 1 bssCOMRAM dist/default/debug\PIC_Activity7.debug.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug\PIC_Activity7.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\PIC_Activity7.debug.o
